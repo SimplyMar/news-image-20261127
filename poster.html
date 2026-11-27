@@ -6,12 +6,12 @@
 <title>Friday 27 November 2026 — The World in One Day</title>
 <style>
   :root {
-    --paper: #f6f1e6;
-    --card: #fffdf8;
-    --ink: #121821;
+    --paper: #f4eee1;
+    --card: #fffdf9;
+    --ink: #111720;
     --muted: #4b5563;
-    --rule: #cfc6b4;
-    --dark-rule: #1d2531;
+    --rule: #ccc2af;
+    --dark-rule: #1a222d;
     --crimson: #b3261e;
     --navy: #16304c;
   }
@@ -47,7 +47,7 @@
     padding: 0 14px;
     font-size: 9.5px;
     font-weight: 700;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.72px;
     text-transform: uppercase;
   }
   .eyebrow .accent { color: #f0b85c; }
@@ -61,7 +61,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #faf6ec 0%, #f5efe2 100%);
+    background: linear-gradient(180deg, #faf6ec 0%, #f3ecde 100%);
   }
   .masthead h1 {
     font-family: Georgia, "Times New Roman", serif;
@@ -112,14 +112,14 @@
   .num-lbl {
     font-size: 8.4px;
     line-height: 1.13;
-    color: #2c3542;
+    color: #252e3a;
     font-weight: 600;
   }
 
   /* UTC TIMELINE */
   .utc-bar {
     height: 20px;
-    background: #1b2430;
+    background: #19222e;
     color: #e5e7eb;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@
     align-items: center;
     gap: 3px;
     padding: 2px 10px;
-    background: #efe8d8;
+    background: #ece4d2;
     border-bottom: 1px solid var(--rule);
   }
   .r-pill {
@@ -206,8 +206,9 @@
   }
   .hero-card {
     background: var(--card);
-    border: 1px solid #c5bca9;
+    border: 1px solid #bfb5a2;
     border-top: 2.5px solid var(--ink);
+    box-shadow: 0 1px 2px rgba(17,23,32,0.06);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -246,8 +247,8 @@
   }
   .hero-title {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 15.6px;
-    line-height: 1.12;
+    font-size: 15.7px;
+    line-height: 1.11;
     font-weight: 700;
     color: var(--ink);
     margin-bottom: 2.5px;
@@ -255,7 +256,7 @@
   .hero-desc {
     font-size: 9.5px;
     line-height: 1.22;
-    color: #2b3440;
+    color: #27303b;
   }
   .why-line {
     margin-top: 2px;
@@ -316,23 +317,23 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.45);
-    border: 1px solid rgba(255,255,255,0.88);
+    border: 1px solid rgba(255,255,255,0.9);
   }
-  .art-tag {
+  .hero-tag {
     position: absolute;
     bottom: 4px;
-    right: 4px;
-    background: rgba(15, 23, 34, 0.9);
+    right: 5px;
+    background: rgba(15, 23, 34, 0.88);
     color: #f8fafc;
     font-size: 7.7px;
     font-weight: 800;
     letter-spacing: 0.28px;
     padding: 1.4px 5px;
     border-radius: 2px;
-    border: 1px solid rgba(255,255,255,0.22);
+    border: 1px solid rgba(255,255,255,0.24);
   }
-  .art-tag.red  { background: rgba(179, 38, 30, 0.94); }
-  .art-tag.gold { background: rgba(166, 105, 18, 0.95); }
+  .hero-tag.red  { background: rgba(179, 38, 30, 0.94); }
+  .hero-tag.gold { background: rgba(166, 105, 18, 0.95); }
 
   /* 5-CARD GRID ROWS (ROWS 2 & 3) */
   .mid-grid {
@@ -343,7 +344,8 @@
   }
   .mid-card {
     background: var(--card);
-    border: 1px solid #c9c0ae;
+    border: 1px solid #c3b9a7;
+    box-shadow: 0 1px 1.5px rgba(17,23,32,0.05);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -351,7 +353,7 @@
   }
   .mid-art {
     width: 100%;
-    height: 61px;
+    height: 62px;
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid #d5ccb9;
@@ -376,13 +378,13 @@
   }
   .mid-title {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 11.7px;
+    font-size: 11.75px;
     line-height: 1.12;
     font-weight: 700;
     color: var(--ink);
     margin-bottom: 1.5px;
   }
-  .mid-desc { font-size: 8.65px; line-height: 1.21; color: #313b47; }
+  .mid-desc { font-size: 8.65px; line-height: 1.21; color: #2c3642; }
 
   /* BOTTOM SECTION: MAP + 24 SPACIOUS BRIEFS */
   .bottom-band {
@@ -393,15 +395,16 @@
   }
   .panel {
     background: var(--card);
-    border: 1px solid #c5bca9;
+    border: 1px solid #bfb5a2;
+    box-shadow: 0 1px 1.5px rgba(17,23,32,0.05);
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
   .panel-hdr {
     height: 19px;
-    background: #ece5d5;
-    border-bottom: 1px solid #cfc6b4;
+    background: #eae2d1;
+    border-bottom: 1px solid #ccc2af;
     padding: 0 7px;
     display: flex;
     align-items: center;
@@ -416,7 +419,7 @@
 
   .map-wrap {
     flex: 1;
-    background: #d7e6f0;
+    background: linear-gradient(180deg, #d3e5f2 0%, #e4eff7 100%);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -425,8 +428,8 @@
   .map-wrap svg { width: 100%; height: 175px; display: block; }
   .map-note {
     height: 16px;
-    background: #f3eee2;
-    border-top: 1px solid #d7cebc;
+    background: #f2ece0;
+    border-top: 1px solid #d5ccb9;
     padding: 0 6px;
     display: flex;
     align-items: center;
@@ -512,8 +515,8 @@
   /* FOOTER LEGEND */
   .footer-bar {
     height: 21px;
-    background: #ebe4d4;
-    border-top: 1px solid #c9c0ae;
+    background: #e9e1cf;
+    border-top: 1px solid #c5bca9;
     padding: 0 10px;
     display: flex;
     align-items: center;
@@ -609,50 +612,62 @@
     <!-- ROW 1: 3 DEFINITIVE HERO LEAD STORIES -->
     <div class="hero-grid">
 
-      <!-- HERO 1: US THANKSGIVING STORMS (DRAMATIC STORM & LIGHTNING OVER CITY) -->
+      <!-- HERO 1: US THANKSGIVING STORMS (LAYERED ATMOSPHERIC STORM SCENE) -->
       <article class="hero-card">
         <div class="hero-art">
           <svg viewBox="0 0 326 102" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="h1sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#1c314c"/>
-                <stop offset="65%" stop-color="#47688a"/>
-                <stop offset="100%" stop-color="#273e57"/>
+                <stop offset="0%" stop-color="#192d47"/>
+                <stop offset="58%" stop-color="#3f5f82"/>
+                <stop offset="100%" stop-color="#223850"/>
               </linearGradient>
+              <radialGradient id="h1flash" cx="50%" cy="46%" r="36%">
+                <stop offset="0%" stop-color="#fef08a" stop-opacity="0.42"/>
+                <stop offset="100%" stop-color="#fef08a" stop-opacity="0"/>
+              </radialGradient>
             </defs>
             <rect width="326" height="102" fill="url(#h1sky)"/>
-            <!-- Storm cloud shelf -->
-            <path d="M-10,34 Q28,8 68,26 Q106,5 152,24 Q198,2 248,22 Q292,8 336,30 L336,0 L-10,0 Z" fill="#142234"/>
-            <path d="M12,38 Q65,20 120,34 Q175,18 232,33 Q282,20 326,36" fill="none" stroke="#6482a3" stroke-width="1.8" opacity="0.55"/>
-            <!-- Slanted rain -->
-            <g stroke="#bae6fd" stroke-width="1.2" opacity="0.55">
-              <line x1="30" y1="36" x2="18" y2="74"/><line x1="56" y1="34" x2="44" y2="72"/>
-              <line x1="88" y1="36" x2="76" y2="74"/><line x1="120" y1="34" x2="108" y2="72"/>
-              <line x1="188" y1="36" x2="176" y2="74"/><line x1="218" y1="34" x2="206" y2="72"/>
-              <line x1="252" y1="36" x2="240" y2="74"/><line x1="288" y1="34" x2="276" y2="72"/>
+            <rect width="326" height="102" fill="url(#h1flash)"/>
+            <!-- Layered storm clouds -->
+            <path d="M-10,33 Q30,7 70,25 Q108,4 154,23 Q200,2 250,21 Q294,7 336,29 L336,0 L-10,0 Z" fill="#122030"/>
+            <path d="M-6,40 Q42,20 96,35 Q150,18 212,34 Q270,20 332,37 L332,26 L-6,26 Z" fill="#1e3147" opacity="0.65"/>
+            <!-- Wind-driven rain -->
+            <g stroke="#bae6fd" stroke-width="1.15" opacity="0.52">
+              <line x1="28" y1="36" x2="15" y2="78"/><line x1="56" y1="34" x2="43" y2="76"/>
+              <line x1="88" y1="36" x2="75" y2="78"/><line x1="120" y1="34" x2="107" y2="76"/>
+              <line x1="190" y1="36" x2="177" y2="78"/><line x1="222" y1="34" x2="209" y2="76"/>
+              <line x1="256" y1="36" x2="243" y2="78"/><line x1="292" y1="34" x2="279" y2="76"/>
             </g>
-            <!-- City skyline -->
-            <rect x="12" y="56" width="24" height="46" fill="#101b29"/>
-            <rect x="40" y="46" width="28" height="56" fill="#1a2a3e"/>
-            <rect x="72" y="60" width="20" height="42" fill="#101b29"/>
-            <rect x="96" y="42" width="28" height="60" fill="#162536"/>
-            <rect x="208" y="52" width="26" height="50" fill="#101b29"/>
-            <rect x="238" y="44" width="32" height="58" fill="#1a2a3e"/>
-            <rect x="274" y="58" width="32" height="44" fill="#101b29"/>
-            <rect x="47" y="54" width="4.5" height="5.5" fill="#fde047"/>
-            <rect x="104" y="51" width="4.5" height="5.5" fill="#fde047" opacity="0.65"/>
-            <rect x="246" y="53" width="4.5" height="5.5" fill="#fde047"/>
-            <!-- Power pylon & glowing lightning -->
-            <circle cx="162" cy="46" r="24" fill="#fde047" opacity="0.18"/>
-            <path d="M148,102 L162,40 L176,102 M144,58 L180,58 M147,73 L177,73 M155,58 L169,73 M169,58 L155,73" stroke="#cbd5e1" stroke-width="1.9" fill="none"/>
-            <polygon points="164,16 147,48 160,48 149,80 179,43 165,43 175,16" fill="#facc15" stroke="#fef9c3" stroke-width="0.9"/>
-            <!-- Grounded plane silhouette -->
-            <path d="M266,38 L296,35 L304,31 L307,32 L301,37 L305,41 L301,42 L294,39 L270,41 Z" fill="#f1f5f9"/>
-            <!-- Coastal flood surge -->
-            <path d="M0,92 Q42,86 84,92 Q126,98 168,92 Q210,86 252,92 Q292,98 326,92 L326,102 L0,102 Z" fill="#1b588c"/>
+            <!-- Far misty skyline layer -->
+            <g fill="#1c3148" opacity="0.72">
+              <rect x="26" y="48" width="18" height="44"/><rect x="82" y="40" width="22" height="52"/>
+              <rect x="196" y="44" width="20" height="48"/><rect x="260" y="47" width="24" height="45"/>
+            </g>
+            <!-- Foreground dark blacked-out skyline -->
+            <rect x="10" y="56" width="24" height="36" fill="#0f1a27"/>
+            <rect x="38" y="45" width="28" height="47" fill="#162538"/>
+            <rect x="70" y="59" width="20" height="33" fill="#0f1a27"/>
+            <rect x="94" y="42" width="28" height="50" fill="#142233"/>
+            <rect x="208" y="51" width="26" height="41" fill="#0f1a27"/>
+            <rect x="238" y="44" width="32" height="48" fill="#162538"/>
+            <rect x="274" y="57" width="34" height="35" fill="#0f1a27"/>
+            <!-- Backup generator lit windows -->
+            <rect x="46" y="53" width="4.5" height="5.5" fill="#fde047"/>
+            <rect x="102" y="50" width="4.5" height="5.5" fill="#fde047" opacity="0.65"/>
+            <rect x="246" y="52" width="4.5" height="5.5" fill="#fde047"/>
+            <!-- Transmission pylon & dramatic lightning bolt -->
+            <path d="M148,92 L162,38 L176,92 M143,56 L181,56 M146,70 L178,70 M155,56 L169,70 M169,56 L155,70" stroke="#cbd5e1" stroke-width="1.8" fill="none"/>
+            <polygon points="164,14 147,47 160,47 149,79 179,42 165,42 175,14" fill="#facc15" stroke="#fef9c3" stroke-width="0.9"/>
+            <!-- Diverted jet silhouette -->
+            <path d="M264,37 L294,34 L302,30 L305,31 L299,36 L303,40 L299,41 L292,38 L268,40 Z" fill="#f1f5f9"/>
+            <!-- Flooded waterfront with lightning reflection -->
+            <rect x="0" y="88" width="326" height="14" fill="#164a78"/>
+            <ellipse cx="162" cy="95" rx="34" ry="3.2" fill="#fde047" opacity="0.34"/>
+            <path d="M0,90 Q42,85 84,90 Q126,95 168,90 Q210,85 252,90 Q292,95 326,90" fill="none" stroke="#7dd3fc" stroke-width="1.2" opacity="0.5"/>
           </svg>
           <span class="art-num rc-na">1</span>
-          <span class="art-tag gold">~1M OUT · 400+ FLIGHTS</span>
+          <span class="hero-tag gold">~1M OUT · 400+ FLIGHTS</span>
         </div>
         <div class="hero-body">
           <div>
@@ -672,41 +687,54 @@
         </div>
       </article>
 
-      <!-- HERO 2: GAZA STRIKES / HAMAS WEIGHS RESPONSE -->
+      <!-- HERO 2: GAZA STRIKES / HAMAS WEIGHS RESPONSE (PAINTERLY DUSK SKYLINE) -->
       <article class="hero-card">
         <div class="hero-art">
           <svg viewBox="0 0 326 102" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="h2sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#3b2840"/>
-                <stop offset="52%" stop-color="#b85b3a"/>
-                <stop offset="100%" stop-color="#efa95d"/>
+                <stop offset="0%" stop-color="#36243d"/>
+                <stop offset="48%" stop-color="#b55736"/>
+                <stop offset="100%" stop-color="#f2b263"/>
               </linearGradient>
+              <radialGradient id="h2glow" cx="36%" cy="56%" r="28%">
+                <stop offset="0%" stop-color="#fde047" stop-opacity="0.72"/>
+                <stop offset="50%" stop-color="#f97316" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+              </radialGradient>
             </defs>
             <rect width="326" height="102" fill="url(#h2sky)"/>
-            <circle cx="272" cy="27" r="15" fill="#fef3c7" opacity="0.8"/>
-            <!-- Rising smoke plumes -->
-            <path d="M96,68 Q84,45 105,32 Q114,16 135,23 Q142,40 120,66 Z" fill="#2c252a" opacity="0.8"/>
-            <path d="M188,72 Q181,50 198,41 Q209,32 220,41 Q213,56 202,72 Z" fill="#3a2f34" opacity="0.7"/>
-            <!-- Gaza skyline silhouette -->
-            <rect x="0" y="68" width="38" height="34" fill="#251e23"/>
-            <rect x="42" y="56" width="32" height="46" fill="#33282d"/>
-            <rect x="78" y="63" width="30" height="39" fill="#221b20"/>
-            <polygon points="112,102 112,50 132,50 138,59 150,55 150,102" fill="#2b2227"/>
-            <rect x="156" y="59" width="34" height="43" fill="#352a2f"/>
-            <path d="M210,74 A16,14 0 0 1 242,74 Z" fill="#211a1f"/>
-            <rect x="206" y="74" width="40" height="28" fill="#211a1f"/>
-            <rect x="246" y="44" width="6" height="58" fill="#211a1f"/>
-            <polygon points="245,44 249,34 253,44" fill="#211a1f"/>
-            <rect x="260" y="64" width="66" height="38" fill="#2a2126"/>
-            <circle cx="116" cy="57" r="8.5" fill="#f97316" opacity="0.88"/>
-            <circle cx="116" cy="57" r="4" fill="#fef08a"/>
-            <rect x="48" y="65" width="4" height="5" fill="#fde68a" opacity="0.72"/>
-            <rect x="58" y="65" width="4" height="5" fill="#fde68a" opacity="0.52"/>
-            <rect x="164" y="67" width="4" height="5" fill="#fde68a" opacity="0.62"/>
+            <circle cx="272" cy="27" r="15" fill="#fef3c7" opacity="0.82"/>
+            <rect width="326" height="102" fill="url(#h2glow)"/>
+            <!-- Backlit smoke plumes -->
+            <path d="M96,68 Q82,45 104,31 Q113,15 135,22 Q143,39 120,66 Z" fill="#2b2328" opacity="0.82"/>
+            <path d="M188,72 Q180,49 198,40 Q210,30 221,40 Q214,56 202,72 Z" fill="#3a2f34" opacity="0.7"/>
+            <!-- Distant silhouette buildings -->
+            <g fill="#593a38" opacity="0.65">
+              <rect x="20" y="54" width="24" height="48"/><rect x="64" y="48" width="26" height="54"/>
+              <rect x="144" y="49" width="28" height="53"/><rect x="268" y="52" width="32" height="50"/>
+            </g>
+            <!-- Foreground Gaza skyline -->
+            <rect x="0" y="68" width="38" height="34" fill="#241d22"/>
+            <rect x="42" y="56" width="32" height="46" fill="#32272c"/>
+            <rect x="78" y="63" width="30" height="39" fill="#211a1f"/>
+            <polygon points="112,102 112,50 132,50 138,59 150,55 150,102" fill="#2a2126"/>
+            <rect x="156" y="59" width="34" height="43" fill="#34292e"/>
+            <path d="M210,74 A16,14 0 0 1 242,74 Z" fill="#1f181d"/>
+            <rect x="206" y="74" width="40" height="28" fill="#1f181d"/>
+            <rect x="246" y="44" width="6" height="58" fill="#1f181d"/>
+            <polygon points="245,44 249,34 253,44" fill="#1f181d"/>
+            <rect x="260" y="64" width="66" height="38" fill="#292025"/>
+            <!-- Impact flare -->
+            <circle cx="116" cy="57" r="7.5" fill="#f97316" opacity="0.9"/>
+            <circle cx="116" cy="57" r="3.6" fill="#fef08a"/>
+            <!-- Warm lit windows -->
+            <rect x="48" y="65" width="4" height="5" fill="#fde68a" opacity="0.75"/>
+            <rect x="58" y="65" width="4" height="5" fill="#fde68a" opacity="0.55"/>
+            <rect x="164" y="67" width="4" height="5" fill="#fde68a" opacity="0.65"/>
           </svg>
           <span class="art-num rc-me">2</span>
-          <span class="art-tag red">10 KILLED · TRUCE STRAINED</span>
+          <span class="hero-tag red">10 KILLED · TRUCE STRAINED</span>
         </div>
         <div class="hero-body">
           <div>
@@ -726,39 +754,52 @@
         </div>
       </article>
 
-      <!-- HERO 3: NEW ZEALAND HUNG PARLIAMENT (CLEAN EDITORIAL BEEHIVE & HEMICYCLE) -->
+      <!-- HERO 3: NEW ZEALAND HUNG PARLIAMENT (WELLINGTON HARBOUR & BEEHIVE + HEMICYCLE) -->
       <article class="hero-card">
         <div class="hero-art">
           <svg viewBox="0 0 326 102" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="h3sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#c8dfee"/>
-                <stop offset="100%" stop-color="#eef5f8"/>
+                <stop offset="0%" stop-color="#9cc6e0"/>
+                <stop offset="65%" stop-color="#dcecf5"/>
+                <stop offset="100%" stop-color="#f3f7f9"/>
               </linearGradient>
             </defs>
             <rect width="326" height="102" fill="url(#h3sky)"/>
-            <!-- Wellington harbour & hills -->
-            <path d="M0,74 Q58,54 112,68 Q162,78 220,66 Q275,55 326,72 L326,102 L0,102 Z" fill="#88a995"/>
-            <rect x="0" y="84" width="326" height="18" fill="#2d6e8f"/>
-            <!-- NZ Beehive Parliament silhouette left -->
-            <g fill="#475569" stroke="#1e293b" stroke-width="0.9">
-              <polygon points="36,84 106,84 102,73 40,73"/>
-              <polygon points="42,73 100,73 96,62 46,62"/>
-              <polygon points="48,62 94,62 90,51 52,51"/>
-              <polygon points="54,51 88,51 84,41 58,41"/>
-              <polygon points="60,41 82,41 71,32"/>
+            <!-- Soft clouds -->
+            <path d="M22,22 Q36,12 54,19 Q68,14 82,22 Z" fill="#ffffff" opacity="0.75"/>
+            <path d="M240,18 Q258,10 278,16 Q292,11 308,18 Z" fill="#ffffff" opacity="0.65"/>
+            <!-- Layered Mount Victoria hills -->
+            <path d="M0,72 Q52,48 108,65 Q162,76 226,62 Q280,50 326,68 L326,102 L0,102 Z" fill="#7c9f8b"/>
+            <path d="M0,78 Q65,64 134,76 Q210,84 326,73 L326,102 L0,102 Z" fill="#5e826e"/>
+            <!-- Wellington Harbour -->
+            <rect x="0" y="84" width="326" height="18" fill="#23658a"/>
+            <path d="M12,92 Q52,89 92,92 M118,95 Q160,92 202,95" stroke="#7dd3fc" stroke-width="1" opacity="0.45" fill="none"/>
+            <!-- NZ Beehive Parliament building with architectural bands -->
+            <g fill="#475569" stroke="#1e293b" stroke-width="0.85">
+              <polygon points="34,84 108,84 104,72 38,72"/>
+              <polygon points="40,72 102,72 98,61 44,61"/>
+              <polygon points="46,61 96,61 92,50 50,50"/>
+              <polygon points="52,50 90,50 86,40 56,40"/>
+              <polygon points="58,40 84,40 71,30"/>
             </g>
-            <!-- Clean parliamentary hemicycle graphic right (ZERO overlapping lines) -->
-            <path d="M150,82 A66,56 0 0 1 282,82" fill="none" stroke="#cbd5e1" stroke-width="15"/>
-            <path d="M150,82 A66,56 0 0 1 214,26.2" fill="none" stroke="#1d4ed8" stroke-width="15"/>
-            <path d="M215.5,26.1 A66,56 0 0 1 228,27.6" fill="none" stroke="#d97706" stroke-width="15"/>
-            <path d="M229.5,28 A66,56 0 0 1 282,82" fill="none" stroke="#dc2626" stroke-width="15"/>
-            <line x1="216" y1="15" x2="216" y2="39" stroke="#0f172a" stroke-width="2" stroke-dasharray="3 2"/>
-            <text x="216" y="64" text-anchor="middle" fill="#0f172a" font-size="16" font-weight="800" font-family="Georgia, serif">65 / 131</text>
-            <text x="216" y="77" text-anchor="middle" fill="#b45309" font-size="8.2" font-weight="800" font-family="Segoe UI, Arial">1 SEAT SHORT</text>
+            <!-- Architectural window slits on Beehive -->
+            <g stroke="#e2e8f0" stroke-width="1" opacity="0.7">
+              <line x1="44" y1="78" x2="98" y2="78"/><line x1="48" y1="67" x2="94" y2="67"/>
+              <line x1="53" y1="56" x2="89" y2="56"/><line x1="59" y1="45" x2="83" y2="45"/>
+            </g>
+            <!-- Clean translucent backing + parliamentary hemicycle right -->
+            <rect x="136" y="10" width="166" height="72" rx="4" fill="rgba(255,253,248,0.82)" stroke="rgba(30,41,59,0.16)"/>
+            <path d="M155,75 A64,53 0 0 1 283,75" fill="none" stroke="#cbd5e1" stroke-width="14"/>
+            <path d="M155,75 A64,53 0 0 1 217,22.2" fill="none" stroke="#1d4ed8" stroke-width="14"/>
+            <path d="M218.5,22.1 A64,53 0 0 1 231,23.6" fill="none" stroke="#d97706" stroke-width="14"/>
+            <path d="M232.5,24 A64,53 0 0 1 283,75" fill="none" stroke="#dc2626" stroke-width="14"/>
+            <line x1="219" y1="12" x2="219" y2="34" stroke="#0f172a" stroke-width="2" stroke-dasharray="3 2"/>
+            <text x="219" y="59" text-anchor="middle" fill="#0f172a" font-size="16" font-weight="800" font-family="Georgia, serif">65 / 131</text>
+            <text x="219" y="72" text-anchor="middle" fill="#b45309" font-size="8.2" font-weight="800" font-family="Segoe UI, Arial">1 SEAT SHORT OF 66</text>
           </svg>
           <span class="art-num rc-oc">3</span>
-          <span class="art-tag">HUNG PARLIAMENT</span>
+          <span class="hero-tag">HUNG PARLIAMENT</span>
         </div>
         <div class="hero-body">
           <div>
@@ -780,32 +821,37 @@
 
     </div>
 
-    <!-- ROW 2: 5 PURE EDITORIAL ILLUSTRATED CARDS (4–8) -->
+    <!-- ROW 2: 5 UNOBSTRUCTED PAINTERLY EDITORIAL SCENES (4–8) -->
     <div class="mid-grid">
 
       <!-- 4: KUWAIT DRONE STRIKE -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="m4" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#2c2438"/>
-                <stop offset="100%" stop-color="#b55d35"/>
+                <stop offset="0%" stop-color="#282038"/>
+                <stop offset="58%" stop-color="#7c3a32"/>
+                <stop offset="100%" stop-color="#cc723e"/>
               </linearGradient>
             </defs>
-            <rect width="194" height="61" fill="url(#m4)"/>
-            <path d="M0,47 Q62,41 124,46 Q165,49 194,44 L194,61 L0,61 Z" fill="#473024"/>
-            <rect x="34" y="33" width="16" height="16" fill="#1e293b"/>
-            <rect x="40" y="20" width="4" height="14" fill="#e2e8f0"/>
-            <path d="M28,20 Q42,7 56,20 Z" fill="#f8fafc"/>
-            <circle cx="72" cy="39" r="8.5" fill="#f97316" opacity="0.65"/>
-            <circle cx="72" cy="39" r="4" fill="#fde047"/>
-            <path d="M70,37 Q66,24 79,17 Q88,12 95,17 Q90,29 78,36 Z" fill="#1f1b24" opacity="0.72"/>
-            <polygon points="128,14 152,9 146,18 152,22" fill="#0f172a" stroke="#fca5a5" stroke-width="0.9"/>
-            <polygon points="158,27 178,23 173,30 178,33" fill="#0f172a" stroke="#fca5a5" stroke-width="0.9"/>
+            <rect width="194" height="62" fill="url(#m4)"/>
+            <path d="M0,47 Q62,40 124,46 Q165,49 194,43 L194,62 L0,62 Z" fill="#4f3325"/>
+            <path d="M0,54 Q85,49 194,55 L194,62 L0,62 Z" fill="#2c1c14"/>
+            <!-- Air-defence radar station & scan beam -->
+            <path d="M46,18 L92,8 L98,32 Z" fill="#38bdf8" opacity="0.16"/>
+            <rect x="34" y="34" width="17" height="16" fill="#1e293b"/>
+            <rect x="40.5" y="20" width="4" height="15" fill="#e2e8f0"/>
+            <path d="M28,20 Q42.5,6 57,20 Z" fill="#f8fafc"/>
+            <!-- Impact flame & rising smoke -->
+            <circle cx="76" cy="40" r="10" fill="#f97316" opacity="0.68"/>
+            <circle cx="76" cy="40" r="4.5" fill="#fef08a"/>
+            <path d="M74,38 Q68,23 82,16 Q92,10 100,17 Q94,29 82,37 Z" fill="#1f1a24" opacity="0.78"/>
+            <!-- Twin delta drones -->
+            <polygon points="128,15 154,10 148,19 154,23" fill="#0f172a" stroke="#fca5a5" stroke-width="0.9"/>
+            <polygon points="154,31 178,27 172,34 178,38" fill="#0f172a" stroke="#fca5a5" stroke-width="0.9"/>
           </svg>
           <span class="art-num rc-me">4</span>
-          <span class="art-tag red">2 ITALIANS KILLED</span>
         </div>
         <div class="mid-body">
           <div>
@@ -820,35 +866,38 @@
         </div>
       </article>
 
-      <!-- 5: EARTH TOPS 2C FOR 7 DAYS (CLEAN SCENIC HORIZON & THERMOMETER, ZERO CHART CLUTTER) -->
+      <!-- 5: EARTH TOPS 2C FOR 7 DAYS (ORBITAL HORIZON + THERMAL ATMOSPHERE) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="m5sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#193b54"/>
-                <stop offset="55%" stop-color="#b54724"/>
-                <stop offset="100%" stop-color="#f5a749"/>
+                <stop offset="0%" stop-color="#142d47"/>
+                <stop offset="52%" stop-color="#b54422"/>
+                <stop offset="100%" stop-color="#f7ae4f"/>
               </linearGradient>
-              <radialGradient id="m5earth" cx="50%" cy="15%" r="70%">
+              <radialGradient id="m5earth" cx="50%" cy="12%" r="72%">
                 <stop offset="0%" stop-color="#f59e0b"/>
-                <stop offset="52%" stop-color="#1d7d91"/>
-                <stop offset="100%" stop-color="#0f344a"/>
+                <stop offset="48%" stop-color="#1c7e94"/>
+                <stop offset="100%" stop-color="#0e3147"/>
               </radialGradient>
             </defs>
-            <rect width="194" height="61" fill="url(#m5sky)"/>
-            <ellipse cx="97" cy="90" rx="126" ry="48" fill="url(#m5earth)" stroke="#fef08a" stroke-width="1.6"/>
-            <path d="M18,61 Q46,45 78,49 Q104,42 134,51 L150,61 Z" fill="#2c7f5f" opacity="0.72"/>
-            <!-- Clean bold thermometer icon -->
-            <rect x="89" y="10" width="9" height="32" rx="4.5" fill="#141e2c" stroke="#fff" stroke-width="1.4"/>
-            <circle cx="93.5" cy="43" r="8" fill="#dc2626" stroke="#fff" stroke-width="1.4"/>
-            <rect x="91.5" y="15" width="4" height="27" rx="2" fill="#ff4533"/>
-            <!-- Subtle heat shimmer rings -->
-            <path d="M108,18 Q116,14 124,18" stroke="#fde68a" stroke-width="1.3" fill="none" opacity="0.8"/>
-            <path d="M108,26 Q116,22 124,26" stroke="#fde68a" stroke-width="1.3" fill="none" opacity="0.6"/>
+            <rect width="194" height="62" fill="url(#m5sky)"/>
+            <circle cx="34" cy="14" r="1" fill="#fff" opacity="0.7"/>
+            <circle cx="162" cy="16" r="1.2" fill="#fde68a" opacity="0.8"/>
+            <ellipse cx="97" cy="92" rx="134" ry="52" fill="#fde68a" opacity="0.22"/>
+            <ellipse cx="97" cy="92" rx="128" ry="49" fill="url(#m5earth)" stroke="#fef08a" stroke-width="1.6"/>
+            <path d="M16,62 Q46,45 80,49 Q106,42 138,52 L154,62 Z" fill="#2c8260" opacity="0.74"/>
+            <path d="M40,51 Q66,47 90,52" stroke="#fff" stroke-width="1.4" opacity="0.5" fill="none"/>
+            <!-- Bold mercury thermometer -->
+            <rect x="89" y="9" width="10" height="34" rx="5" fill="#141e2c" stroke="#fff" stroke-width="1.5"/>
+            <circle cx="94" cy="44" r="8.5" fill="#dc2626" stroke="#fff" stroke-width="1.5"/>
+            <rect x="92" y="14" width="4" height="29" rx="2" fill="#ff4533"/>
+            <!-- Heat shimmer waves -->
+            <path d="M109,16 Q118,12 127,16 M109,24 Q118,20 127,24 M109,32 Q118,28 127,32" stroke="#fde68a" stroke-width="1.4" fill="none" opacity="0.82"/>
+            <path d="M64,16 Q73,12 81,16 M64,24 Q73,20 81,24" stroke="#fde68a" stroke-width="1.4" fill="none" opacity="0.75"/>
           </svg>
           <span class="art-num rc-glob">5</span>
-          <span class="art-tag red">7 DAYS &gt;2.0°C</span>
         </div>
         <div class="mid-body">
           <div>
@@ -863,31 +912,36 @@
         </div>
       </article>
 
-      <!-- 6: BLACK FRIDAY & AMAZON STRIKES (CLEAN STOREFRONT & PICKET SCENE, ZERO EXTRA TEXT) -->
+      <!-- 6: BLACK FRIDAY & AMAZON STRIKES (UNOBSTRUCTED STOREFRONT & MARCH SCENE) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
-            <rect width="194" height="61" fill="#f3e7d4"/>
-            <!-- Crimson awning -->
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
+            <rect width="194" height="62" fill="#f5ead7"/>
+            <!-- Striped editorial storefront awning -->
             <rect x="0" y="0" width="194" height="17" fill="#a8241c"/>
-            <polygon points="0,17 16,25 32,17 48,25 64,17 80,25 96,17 112,25 128,17 144,25 160,17 176,25 194,17" fill="#821a14"/>
-            <!-- Stacked parcel boxes left -->
-            <rect x="20" y="34" width="26" height="22" fill="#c98a4b" stroke="#7c4a1d" stroke-width="1.1"/>
-            <line x1="20" y1="41" x2="46" y2="41" stroke="#7c4a1d" stroke-width="1.1"/>
-            <rect x="48" y="41" width="22" height="15" fill="#d99f62" stroke="#7c4a1d" stroke-width="1.1"/>
-            <!-- Shopping bag silhouette center -->
-            <rect x="82" y="32" width="24" height="24" rx="2" fill="#1e3a5f"/>
-            <path d="M88,32 V27 A6,6 0 0 1 100,27 V32" fill="none" stroke="#1e3a5f" stroke-width="2.2"/>
-            <!-- Striking workers with raised picket signs right -->
-            <rect x="122" y="25" width="24" height="13" rx="1.5" fill="#b3261e"/>
-            <line x1="134" y1="38" x2="134" y2="56" stroke="#1e293b" stroke-width="2"/>
-            <circle cx="134" cy="48" r="4" fill="#1e293b"/>
-            <rect x="152" y="29" width="24" height="13" rx="1.5" fill="#164e63"/>
-            <line x1="164" y1="42" x2="164" y2="56" stroke="#1e293b" stroke-width="2"/>
-            <circle cx="164" cy="50" r="4" fill="#1e293b"/>
+            <g fill="#f5ead7" opacity="0.22">
+              <rect x="16" y="0" width="16" height="17"/><rect x="48" y="0" width="16" height="17"/>
+              <rect x="80" y="0" width="16" height="17"/><rect x="112" y="0" width="16" height="17"/>
+              <rect x="144" y="0" width="16" height="17"/><rect x="176" y="0" width="18" height="17"/>
+            </g>
+            <polygon points="0,17 16,24 32,17 48,24 64,17 80,24 96,17 112,24 128,17 144,24 160,17 176,24 194,17" fill="#7d1913"/>
+            <!-- Warehouse parcel stacks left -->
+            <rect x="14" y="36" width="26" height="22" fill="#c98a4b" stroke="#7c4a1d" stroke-width="1"/>
+            <line x1="14" y1="43" x2="40" y2="43" stroke="#7c4a1d" stroke-width="1"/>
+            <rect x="42" y="42" width="22" height="16" fill="#dca265" stroke="#7c4a1d" stroke-width="1"/>
+            <!-- Shopping bag center -->
+            <rect x="74" y="33" width="24" height="25" rx="2" fill="#1e3a5f"/>
+            <path d="M80,33 V28 A6,6 0 0 1 92,28 V33" fill="none" stroke="#1e3a5f" stroke-width="2.2"/>
+            <!-- Marching strikers with raised placards right (100% unobstructed!) -->
+            <rect x="112" y="25" width="28" height="14" rx="1.5" fill="#b3261e"/>
+            <line x1="126" y1="39" x2="126" y2="58" stroke="#1e293b" stroke-width="2"/>
+            <circle cx="122" cy="48" r="4" fill="#1e293b"/><rect x="117" y="52" width="10" height="8" rx="2" fill="#334155"/>
+            <rect x="148" y="28" width="28" height="14" rx="1.5" fill="#164e63"/>
+            <line x1="162" y1="42" x2="162" y2="58" stroke="#1e293b" stroke-width="2"/>
+            <circle cx="158" cy="50" r="4" fill="#1e293b"/><rect x="153" y="54" width="10" height="7" rx="2" fill="#334155"/>
+            <rect x="0" y="58" width="194" height="4" fill="#c7b89f"/>
           </svg>
           <span class="art-num rc-glob">6</span>
-          <span class="art-tag gold">$12.9B · 20+ NATIONS</span>
         </div>
         <div class="mid-body">
           <div>
@@ -902,27 +956,31 @@
         </div>
       </article>
 
-      <!-- 7: ZELENSKYY WARNS RUSSIA GRID BARRAGE -->
+      <!-- 7: ZELENSKYY WARNS RUSSIA GRID BARRAGE (WINTER KYIV GRID SCENE) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="m7" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#1d324d"/>
-                <stop offset="100%" stop-color="#4e6f94"/>
+                <stop offset="0%" stop-color="#192d47"/>
+                <stop offset="100%" stop-color="#4e7199"/>
               </linearGradient>
             </defs>
-            <rect width="194" height="61" fill="url(#m7)"/>
-            <rect x="0" y="50" width="194" height="11" fill="#e2ebf2"/>
-            <path d="M40,51 L50,13 L60,51 M34,25 L66,25 M37,36 L63,36" stroke="#cbd5e1" stroke-width="1.6" fill="none"/>
-            <path d="M126,51 L136,15 L146,51 M121,27 L151,27 M124,37 L148,37" stroke="#cbd5e1" stroke-width="1.6" fill="none"/>
-            <path d="M66,25 Q93,37 121,27 M63,36 Q93,47 124,37" stroke="#94a3b8" stroke-width="1" fill="none"/>
-            <path d="M188,8 Q145,16 105,30" stroke="#fca5a5" stroke-width="1.6" stroke-dasharray="3 2" fill="none"/>
+            <rect width="194" height="62" fill="url(#m7)"/>
+            <!-- Distant snow-dusted city -->
+            <rect x="10" y="38" width="16" height="14" fill="#243a54"/><rect x="158" y="34" width="20" height="18" fill="#243a54"/>
+            <rect x="0" y="50" width="194" height="12" fill="#e6eff6"/>
+            <!-- Power pylons -->
+            <path d="M40,51 L50,12 L60,51 M34,24 L66,24 M37,35 L63,35" stroke="#dce6f0" stroke-width="1.6" fill="none"/>
+            <path d="M126,51 L136,14 L146,51 M121,26 L151,26 M124,36 L148,36" stroke="#dce6f0" stroke-width="1.6" fill="none"/>
+            <path d="M66,24 Q93,36 121,26 M63,35 Q93,46 124,36" stroke="#94a3b8" stroke-width="1" fill="none"/>
+            <!-- Missile trajectory + warning spark -->
+            <path d="M188,8 Q145,16 105,30" stroke="#fca5a5" stroke-width="1.7" stroke-dasharray="3 2" fill="none"/>
             <polygon points="102,31 110,25 108,33" fill="#ef4444"/>
+            <circle cx="95" cy="30" r="14" fill="#fde047" opacity="0.18"/>
             <polygon points="94,13 86,31 94,31 89,47 106,26 97,26 102,13" fill="#fde047"/>
           </svg>
           <span class="art-num rc-eu">7</span>
-          <span class="art-tag red">GRID ALERT</span>
         </div>
         <div class="mid-body">
           <div>
@@ -937,29 +995,35 @@
         </div>
       </article>
 
-      <!-- 8: IBIZA DIESEL TANKER CAPSIZES -->
+      <!-- 8: IBIZA DIESEL TANKER CAPSIZES (BALEARIC CLIFF & RESCUE SCENE) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="m8sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#7eb6db"/>
-                <stop offset="100%" stop-color="#dff0fa"/>
+                <stop offset="0%" stop-color="#6faed8"/>
+                <stop offset="100%" stop-color="#e3f3fc"/>
               </linearGradient>
             </defs>
-            <rect width="194" height="61" fill="url(#m8sky)"/>
-            <path d="M138,39 L156,21 L176,25 L194,37 L194,43 L138,43 Z" fill="#b49e7e"/>
-            <g transform="translate(82,38) rotate(-24)">
+            <rect width="194" height="62" fill="url(#m8sky)"/>
+            <!-- Balearic headland -->
+            <path d="M134,40 L154,19 L174,24 L194,37 L194,44 L134,44 Z" fill="#b89f7d"/>
+            <path d="M154,19 L166,28 L158,40 L134,40 Z" fill="#9c8362" opacity="0.5"/>
+            <!-- Listing tanker -->
+            <g transform="translate(76,38) rotate(-25)">
               <polygon points="-46,-6 44,-6 36,12 -38,12" fill="#b91c1c" stroke="#1e293b" stroke-width="1"/>
               <rect x="-34" y="-12" width="54" height="6" fill="#334155"/>
               <rect x="20" y="-20" width="16" height="14" fill="#fff" stroke="#475569" stroke-width="0.8"/>
               <rect x="24" y="-26" width="5" height="6" fill="#dc2626"/>
             </g>
-            <path d="M0,40 Q24,34 48,40 Q72,46 96,40 Q120,34 144,40 Q168,46 194,40 L194,61 L0,61 Z" fill="#186fa3"/>
-            <path d="M0,48 Q30,44 60,48 Q90,52 120,48 Q150,44 194,49 L194,61 L0,61 Z" fill="#0f4c75"/>
+            <!-- Rescue boat approaching right -->
+            <polygon points="146,40 168,40 165,45 149,45" fill="#f97316"/>
+            <rect x="154" y="35" width="7" height="5" fill="#fff"/>
+            <!-- Mediterranean waves -->
+            <path d="M0,41 Q24,35 48,41 Q72,47 96,41 Q120,35 144,41 Q168,47 194,41 L194,62 L0,62 Z" fill="#176ea3"/>
+            <path d="M0,49 Q30,45 60,49 Q90,53 120,49 Q150,45 194,50 L194,62 L0,62 Z" fill="#0f4b75"/>
           </svg>
           <span class="art-num rc-eu">8</span>
-          <span class="art-tag">7,000T DIESEL</span>
         </div>
         <div class="mid-body">
           <div>
@@ -976,32 +1040,38 @@
 
     </div>
 
-    <!-- ROW 3: 5 PURE EDITORIAL ILLUSTRATED CARDS (9–13) -->
+    <!-- ROW 3: 5 UNOBSTRUCTED PAINTERLY EDITORIAL SCENES (9–13) -->
     <div class="mid-grid">
 
-      <!-- 9: AFP CYBERATTACK (CLEAN SERVER & GLOBE BREACH) -->
+      <!-- 9: AFP CYBERATTACK (PARIS NEWSROOM + EIFFEL DUSK + BREACHED TERMINAL) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
-            <rect width="194" height="61" fill="#e5edf4"/>
-            <!-- Server tower left -->
-            <rect x="28" y="9" width="44" height="44" rx="2" fill="#2c3d55" stroke="#475569"/>
-            <rect x="33" y="14" width="34" height="7" fill="#0f172a"/><circle cx="38" cy="17.5" r="2" fill="#ef4444"/>
-            <rect x="33" y="25" width="34" height="7" fill="#0f172a"/><circle cx="38" cy="28.5" r="2" fill="#ef4444"/>
-            <rect x="33" y="36" width="34" height="7" fill="#0f172a"/><circle cx="38" cy="39.5" r="2" fill="#f59e0b"/>
-            <!-- Red breach shield center -->
-            <path d="M100,9 L120,15 L120,31 Q120,46 100,53 Q80,46 80,31 L80,15 Z" fill="#b3261e" stroke="#7f1d1d" stroke-width="1.2"/>
-            <rect x="93" y="27" width="14" height="11" rx="1.5" fill="#fff"/>
-            <path d="M96,27 V22 A4,4 0 0 1 104,22 V27" fill="none" stroke="#fff" stroke-width="2"/>
-            <!-- Wire globe right -->
-            <circle cx="154" cy="30" r="19" fill="#1e3a5f" stroke="#94a3b8" stroke-width="1.2"/>
-            <ellipse cx="154" cy="30" rx="9" ry="19" fill="none" stroke="#93c5fd" stroke-width="1"/>
-            <line x1="135" y1="30" x2="173" y2="30" stroke="#93c5fd" stroke-width="1"/>
-            <line x1="138" y1="21" x2="170" y2="21" stroke="#93c5fd" stroke-width="0.9"/>
-            <line x1="138" y1="39" x2="170" y2="39" stroke="#93c5fd" stroke-width="0.9"/>
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="m9" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#c6d8ea"/>
+                <stop offset="100%" stop-color="#eaf1f7"/>
+              </linearGradient>
+            </defs>
+            <rect width="194" height="62" fill="url(#m9)"/>
+            <!-- Paris Eiffel Tower dusk silhouette in background left -->
+            <path d="M26,56 L34,12 L42,56 M29,40 L39,40 M31,28 L37,28 M29,56 Q34,47 39,56" stroke="#64748b" stroke-width="1.6" fill="none" opacity="0.72"/>
+            <!-- Newsroom wire terminal monitor center -->
+            <rect x="60" y="10" width="76" height="40" rx="3" fill="#182232" stroke="#475569" stroke-width="1.4"/>
+            <rect x="65" y="15" width="66" height="30" fill="#7f1d1d"/>
+            <!-- Glowing lock inside crimson breach screen -->
+            <rect x="91" y="28" width="14" height="11" rx="1.5" fill="#fff"/>
+            <path d="M94,28 V23 A4,4 0 0 1 102,23 V28" fill="none" stroke="#fff" stroke-width="2"/>
+            <rect x="92" y="50" width="12" height="5" fill="#475569"/>
+            <rect x="82" y="55" width="32" height="3" rx="1" fill="#334155"/>
+            <!-- Global wire globe right -->
+            <circle cx="163" cy="31" r="18" fill="#1d3c63" stroke="#64748b" stroke-width="1"/>
+            <ellipse cx="163" cy="31" rx="8.5" ry="18" fill="none" stroke="#93c5fd" stroke-width="0.9"/>
+            <line x1="145" y1="31" x2="181" y2="31" stroke="#93c5fd" stroke-width="0.9"/>
+            <line x1="148" y1="22" x2="178" y2="22" stroke="#93c5fd" stroke-width="0.8"/>
+            <line x1="148" y1="40" x2="178" y2="40" stroke="#93c5fd" stroke-width="0.8"/>
           </svg>
           <span class="art-num rc-eu">9</span>
-          <span class="art-tag red">AFP OFFLINE</span>
         </div>
         <div class="mid-body">
           <div>
@@ -1016,33 +1086,41 @@
         </div>
       </article>
 
-      <!-- 10: SAP 10,000 AI JOB CUTS (CLEAN CORPORATE CAMPUS & CHIP) -->
+      <!-- 10: SAP 10,000 AI JOB CUTS (MODERN GLASS CAMPUS + NEURAL NODES + SLOPE) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="m10" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#c9dceb"/>
-                <stop offset="100%" stop-color="#eaf2f8"/>
+                <stop offset="0%" stop-color="#b8d3e8"/>
+                <stop offset="100%" stop-color="#edf4fa"/>
               </linearGradient>
             </defs>
-            <rect width="194" height="61" fill="url(#m10)"/>
-            <rect x="20" y="20" width="26" height="41" fill="#3b5978"/>
-            <rect x="50" y="11" width="32" height="50" fill="#23405e"/>
+            <rect width="194" height="62" fill="url(#m10)"/>
+            <!-- Glass office towers left -->
+            <rect x="16" y="20" width="28" height="42" fill="#3a5978"/>
+            <rect x="48" y="10" width="36" height="52" fill="#1e3c5c"/>
             <g fill="#bae6fd" opacity="0.78">
-              <rect x="55" y="17" width="6" height="4"/><rect x="65" y="17" width="6" height="4"/>
-              <rect x="55" y="25" width="6" height="4"/><rect x="65" y="25" width="6" height="4"/>
-              <rect x="55" y="33" width="6" height="4"/><rect x="65" y="33" width="6" height="4"/>
+              <rect x="54" y="16" width="7" height="4"/><rect x="65" y="16" width="7" height="4"/>
+              <rect x="54" y="24" width="7" height="4"/><rect x="65" y="24" width="7" height="4"/>
+              <rect x="54" y="32" width="7" height="4"/><rect x="65" y="32" width="7" height="4"/>
+              <rect x="54" y="40" width="7" height="4"/><rect x="65" y="40" width="7" height="4"/>
             </g>
-            <!-- Neural microchip emblem -->
-            <rect x="96" y="12" width="32" height="30" rx="4" fill="#13253b" stroke="#0284c7" stroke-width="1.6"/>
-            <circle cx="112" cy="27" r="6" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
-            <circle cx="112" cy="27" r="2.2" fill="#38bdf8"/>
-            <polyline points="138,16 154,25 166,31 182,40" fill="none" stroke="#dc2626" stroke-width="2.6"/>
-            <polygon points="184,42 175,41 181,33" fill="#dc2626"/>
+            <!-- Neural network cluster center -->
+            <g stroke="#0284c7" stroke-width="1.2">
+              <line x1="100" y1="18" x2="118" y2="30"/><line x1="100" y1="42" x2="118" y2="30"/>
+              <line x1="118" y1="30" x2="134" y2="18"/><line x1="118" y1="30" x2="134" y2="42"/>
+            </g>
+            <circle cx="100" cy="18" r="4" fill="#13253b" stroke="#38bdf8" stroke-width="1.3"/>
+            <circle cx="100" cy="42" r="4" fill="#13253b" stroke="#38bdf8" stroke-width="1.3"/>
+            <circle cx="118" cy="30" r="6" fill="#0f2942" stroke="#38bdf8" stroke-width="1.5"/>
+            <circle cx="134" cy="18" r="4" fill="#13253b" stroke="#38bdf8" stroke-width="1.3"/>
+            <circle cx="134" cy="42" r="4" fill="#13253b" stroke="#38bdf8" stroke-width="1.3"/>
+            <!-- Crimson downward workforce arrow right -->
+            <polyline points="146,16 160,27 170,35 184,48" fill="none" stroke="#c81e1e" stroke-width="2.8"/>
+            <polygon points="186,50 176,49 183,40" fill="#c81e1e"/>
           </svg>
           <span class="art-num rc-eu">10</span>
-          <span class="art-tag red">-10,000 JOBS</span>
         </div>
         <div class="mid-body">
           <div>
@@ -1057,26 +1135,30 @@
         </div>
       </article>
 
-      <!-- 11: NIGER 13 SOLDIERS KILLED (SUNLIT SAHARA OUTPOST) -->
+      <!-- 11: NIGER 13 SOLDIERS KILLED (SUNLIT SAHARA MESAS & OUTPOST) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="m11s" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#c96f32"/>
-                <stop offset="55%" stop-color="#e8a654"/>
-                <stop offset="100%" stop-color="#f5cf87"/>
+                <stop offset="0%" stop-color="#c46a2e"/>
+                <stop offset="55%" stop-color="#eaa857"/>
+                <stop offset="100%" stop-color="#f7d38c"/>
               </linearGradient>
             </defs>
-            <rect width="194" height="61" fill="url(#m11s)"/>
-            <circle cx="144" cy="23" r="12" fill="#fffbeb" opacity="0.88"/>
-            <path d="M0,44 Q52,35 112,43 Q158,47 194,39 L194,61 L0,61 Z" fill="#8f4b22"/>
-            <path d="M0,52 Q75,46 194,53 L194,61 L0,61 Z" fill="#472310"/>
-            <path d="M62,51 L66,23 L78,23 L82,51 M64,33 L80,33 M61,23 L83,23 L81,17 L63,17 Z" fill="#2b160a"/>
-            <path d="M120,51 V40 M108,40 Q120,32 132,40 Z" stroke="#2b160a" stroke-width="2" fill="#2b160a"/>
+            <rect width="194" height="62" fill="url(#m11s)"/>
+            <circle cx="144" cy="23" r="13" fill="#fffbeb" opacity="0.88"/>
+            <!-- Distant Sahel mesa -->
+            <path d="M104,44 L116,32 L162,32 L176,44 Z" fill="#a85b28" opacity="0.65"/>
+            <!-- Dunes -->
+            <path d="M0,45 Q52,36 112,44 Q158,48 194,40 L194,62 L0,62 Z" fill="#8f4b22"/>
+            <path d="M0,53 Q75,47 194,54 L194,62 L0,62 Z" fill="#472310"/>
+            <!-- Outpost tower & acacia trees -->
+            <path d="M60,52 L64,23 L76,23 L80,52 M62,33 L78,33 M59,23 L81,23 L79,17 L61,17 Z" fill="#2b160a"/>
+            <path d="M120,52 V41 M108,41 Q120,33 132,41 Z" stroke="#2b160a" stroke-width="2" fill="#2b160a"/>
+            <path d="M154,53 V45 M146,45 Q154,40 162,45 Z" stroke="#2b160a" stroke-width="1.6" fill="#2b160a"/>
           </svg>
           <span class="art-num rc-af">11</span>
-          <span class="art-tag red">13 KILLED</span>
         </div>
         <div class="mid-body">
           <div>
@@ -1091,23 +1173,35 @@
         </div>
       </article>
 
-      <!-- 12: BRAZIL LULA PICKS TRABUCO -->
+      <!-- 12: BRAZIL LULA PICKS TRABUCO (BRASÍLIA CONGRESS PLAZA + REFLECTING POOL) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
-            <rect width="194" height="61" fill="#155e46"/>
-            <polygon points="48,10 82,30 48,50 14,30" fill="#facc15"/>
-            <circle cx="48" cy="30" r="11" fill="#1d4ed8"/>
-            <path d="M38,28 Q48,24 58,31" fill="none" stroke="#fff" stroke-width="1.6"/>
-            <rect x="96" y="12" width="8" height="38" fill="#f8fafc"/>
-            <rect x="107" y="12" width="8" height="38" fill="#e2e8f0"/>
-            <path d="M84,50 A13,9 0 0 1 102,50 Z" fill="#fff"/>
-            <path d="M116,41 A13,9 0 0 0 136,41 Z" fill="#fff"/>
-            <polyline points="132,36 148,28 160,30 180,10" fill="none" stroke="#86efac" stroke-width="2.6"/>
-            <polygon points="182,7 173,10 180,16" fill="#86efac"/>
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="m12sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#196b4e"/>
+                <stop offset="72%" stop-color="#288c66"/>
+                <stop offset="100%" stop-color="#124a38"/>
+              </linearGradient>
+            </defs>
+            <rect width="194" height="62" fill="url(#m12sky)"/>
+            <!-- Golden Brazilian sun-diamond accent left -->
+            <polygon points="44,10 74,29 44,48 14,29" fill="#facc15" opacity="0.92"/>
+            <circle cx="44" cy="29" r="9.5" fill="#1d4ed8"/>
+            <path d="M35,27 Q44,23 53,30" fill="none" stroke="#fff" stroke-width="1.5"/>
+            <!-- Oscar Niemeyer's National Congress twin towers & saucer domes -->
+            <rect x="94" y="12" width="9" height="39" fill="#f8fafc"/>
+            <rect x="106" y="12" width="9" height="39" fill="#e2e8f0"/>
+            <path d="M80,51 A14,10 0 0 1 100,51 Z" fill="#ffffff"/>
+            <path d="M116,42 A14,10 0 0 0 138,42 Z" fill="#ffffff"/>
+            <rect x="76" y="51" width="66" height="4" fill="#cbd5e1"/>
+            <!-- Reflecting pool base -->
+            <rect x="0" y="55" width="194" height="7" fill="#0d4a4c"/>
+            <!-- Rising emerald market line right -->
+            <polyline points="140,44 154,34 164,37 184,12" fill="none" stroke="#86efac" stroke-width="2.8"/>
+            <polygon points="186,9 176,12 184,19" fill="#86efac"/>
           </svg>
           <span class="art-num rc-la">12</span>
-          <span class="art-tag">FINMIN PICK</span>
         </div>
         <div class="mid-body">
           <div>
@@ -1122,29 +1216,35 @@
         </div>
       </article>
 
-      <!-- 13: TOKYO CORE CPI 2.9% (CLEAN DAWN SKY + TOKYO TOWER + RISING STEP BARS) -->
+      <!-- 13: TOKYO CORE CPI 2.9% (MOUNT FUJI + TOKYO TOWER SUNRISE + CPI PILLARS) -->
       <article class="mid-card">
         <div class="mid-art">
-          <svg viewBox="0 0 194 61" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 194 62" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="m13" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#f2c4a2"/>
-                <stop offset="100%" stop-color="#f9e8d6"/>
+                <stop offset="0%" stop-color="#eea986"/>
+                <stop offset="58%" stop-color="#f7d5bc"/>
+                <stop offset="100%" stop-color="#fbf0e4"/>
               </linearGradient>
             </defs>
-            <rect width="194" height="61" fill="url(#m13)"/>
-            <circle cx="48" cy="33" r="16" fill="#dc2626" opacity="0.24"/>
-            <path d="M38,55 L48,11 L58,55 M43,37 L53,37 M40,46 L56,46" stroke="#c2410c" stroke-width="2" fill="none"/>
-            <circle cx="48" cy="10" r="2" fill="#dc2626"/>
-            <rect x="84" y="42" width="14" height="15" fill="#64748b"/>
-            <rect x="103" y="38" width="14" height="19" fill="#475569"/>
-            <rect x="122" y="34" width="14" height="23" fill="#d97706"/>
-            <rect x="141" y="26" width="14" height="31" fill="#ea580c"/>
-            <rect x="160" y="16" width="16" height="41" fill="#b91c1c"/>
-            <line x1="78" y1="33" x2="184" y2="33" stroke="#1e293b" stroke-width="1.3" stroke-dasharray="3 2"/>
+            <rect width="194" height="62" fill="url(#m13)"/>
+            <!-- Rising sun disc -->
+            <circle cx="52" cy="30" r="16" fill="#dc2626" opacity="0.26"/>
+            <!-- Distant Mount Fuji silhouette -->
+            <polygon points="4,56 38,24 50,24 84,56" fill="#7c8ea3" opacity="0.55"/>
+            <polygon points="34,28 38,24 50,24 54,28 48,30 44,27 40,30" fill="#ffffff" opacity="0.88"/>
+            <!-- Scarlet Tokyo Tower -->
+            <path d="M40,56 L50,11 L60,56 M45,37 L55,37 M42,47 L58,47" stroke="#b91c1c" stroke-width="2" fill="none"/>
+            <circle cx="50" cy="10" r="2" fill="#dc2626"/>
+            <!-- Clean stepping CPI pillars (100% unobstructed!) -->
+            <rect x="88" y="43" width="14" height="15" fill="#64748b"/>
+            <rect x="107" y="39" width="14" height="19" fill="#475569"/>
+            <rect x="126" y="34" width="14" height="24" fill="#d97706"/>
+            <rect x="145" y="25" width="14" height="33" fill="#ea580c"/>
+            <rect x="164" y="13" width="16" height="45" fill="#b91c1c"/>
+            <line x1="82" y1="33" x2="186" y2="33" stroke="#1e293b" stroke-width="1.3" stroke-dasharray="3 2"/>
           </svg>
           <span class="art-num rc-ea">13</span>
-          <span class="art-tag red">2.9% CPI</span>
         </div>
         <div class="mid-body">
           <div>
@@ -1161,7 +1261,7 @@
 
     </div>
 
-    <!-- BOTTOM BAND: REAL-GEOGRAPHY MAP + 24 SPACIOUS BRIEFS (14–37) -->
+    <!-- BOTTOM BAND: ATLAS-GRADE WORLD MAP + 24 SPACIOUS BRIEFS (14–37) -->
     <div class="bottom-band">
 
       <!-- WORLD MAP PANEL -->
@@ -1172,8 +1272,14 @@
         </div>
         <div class="map-wrap">
           <svg id="world-map" viewBox="0 0 306 175" xmlns="http://www.w3.org/2000/svg">
-            <rect width="306" height="175" fill="#d7e6f0"/>
-            <g stroke="#bfd4e3" stroke-width="0.55">
+            <defs>
+              <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#cfe2ef"/>
+                <stop offset="100%" stop-color="#e3eff7"/>
+              </linearGradient>
+            </defs>
+            <rect width="306" height="175" fill="url(#ocean)"/>
+            <g stroke="#b8cfe0" stroke-width="0.55">
               <line x1="0" y1="87.5" x2="306" y2="87.5" stroke-dasharray="3 2"/>
               <line x1="0" y1="44" x2="306" y2="44"/>
               <line x1="0" y1="131" x2="306" y2="131"/>
@@ -1181,8 +1287,8 @@
               <line x1="153" y1="0" x2="153" y2="175"/>
               <line x1="229.5" y1="0" x2="229.5" y2="175"/>
             </g>
-            <g id="map-land" fill="#cbc1ab" stroke="#8e8470" stroke-width="0.65" stroke-linejoin="round"></g>
-            <g fill="#6d8191" font-size="5.6" font-weight="800" letter-spacing="0.5" font-family="Segoe UI, Arial" opacity="0.8">
+            <g id="map-land" fill="#d3c9b3" stroke="#857b66" stroke-width="0.65" stroke-linejoin="round"></g>
+            <g fill="#697d8d" font-size="5.6" font-weight="800" letter-spacing="0.5" font-family="Segoe UI, Arial" opacity="0.82">
               <text x="20" y="88">AMERICAS</text>
               <text x="159" y="126">AFRICA</text>
               <text x="208" y="42">ASIA</text>
@@ -1311,19 +1417,19 @@
   }
 
   const pins = [
-    { n: 1,  lon: -75,  lat: 40,   color: '#264b8c' }, // US Storm
-    { n: 2,  lon: 34,   lat: 31,   color: '#a83224' }, // Gaza
-    { n: 3,  lon: 170,  lat: -41,  color: '#2e6d36' }, // Wellington NZ
-    { n: 4,  lon: 52,   lat: 25,   color: '#a83224' }, // Kuwait
-    { n: 5,  lon: -35,  lat: 63,   color: '#1c4e63' }, // Global Climate
-    { n: 6,  lon: -102, lat: 41,   color: '#1c4e63' }, // Global Black Friday / Amazon
-    { n: 7,  lon: 34,   lat: 51,   color: '#2f3e6e' }, // Kyiv
-    { n: 8,  lon: 0,    lat: 35,   color: '#2f3e6e' }, // Ibiza
-    { n: 9,  lon: -4,   lat: 50,   color: '#2f3e6e' }, // Paris AFP
-    { n: 10, lon: 14,   lat: 54,   color: '#2f3e6e' }, // Walldorf SAP
-    { n: 11, lon: 3,    lat: 14,   color: '#9c5b14' }, // Sanam Niger
-    { n: 12, lon: -48,  lat: -16,  color: '#1e7356' }, // Brasília
-    { n: 13, lon: 141,  lat: 36,   color: '#b5451b' }  // Tokyo
+    { n: 1,  lon: -75,  lat: 40,   color: '#264b8c' },
+    { n: 2,  lon: 34,   lat: 31,   color: '#a83224' },
+    { n: 3,  lon: 170,  lat: -41,  color: '#2e6d36' },
+    { n: 4,  lon: 52,   lat: 25,   color: '#a83224' },
+    { n: 5,  lon: -35,  lat: 63,   color: '#1c4e63' },
+    { n: 6,  lon: -102, lat: 41,   color: '#1c4e63' },
+    { n: 7,  lon: 34,   lat: 51,   color: '#2f3e6e' },
+    { n: 8,  lon: 0,    lat: 35,   color: '#2f3e6e' },
+    { n: 9,  lon: -4,   lat: 50,   color: '#2f3e6e' },
+    { n: 10, lon: 14,   lat: 54,   color: '#2f3e6e' },
+    { n: 11, lon: 3,    lat: 14,   color: '#9c5b14' },
+    { n: 12, lon: -48,  lat: -16,  color: '#1e7356' },
+    { n: 13, lon: 141,  lat: 36,   color: '#b5451b' }
   ];
 
   const pinG = document.getElementById('map-pins');
