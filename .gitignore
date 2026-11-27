@@ -1,0 +1,4 @@
+out/
+*.tmp.png
+.tmp-chrome-profile/
+.DS_Store

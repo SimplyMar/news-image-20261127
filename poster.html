@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Friday 27 November 2026 — World News in One Image</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1024px;
+      height: 1024px;
+      overflow: hidden;
+      background: #F4EFE4;
+      color: #151922;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      width: 1024px;
+      height: 1024px;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(180,35,24,0.03), transparent 40%),
+        radial-gradient(circle at 88% 92%, rgba(29,78,216,0.03), transparent 40%),
+        #F4EFE4;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-bottom: 2px solid #151922;
+      padding-bottom: 5px;
+    }
+    .mast-top {
+      background: #151922;
+      color: #F4EFE4;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      padding: 3px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+    }
+    .mast-top .accent-dot {
+      color: #F87171;
+      margin: 0 5px;
+    }
+    .mast-main {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-top: 4px;
+      gap: 12px;
+    }
+    .mast-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 29px;
+      font-weight: 900;
+      letter-spacing: -0.4px;
+      line-height: 1;
+      color: #11141B;
+      white-space: nowrap;
+    }
+    .mast-title span.crimson {
+      color: #B42318;
+    }
+    .mast-deck {
+      font-size: 10.5px;
+      line-height: 1.25;
+      color: #334155;
+      font-weight: 500;
+      text-align: right;
+      max-width: 560px;
+    }
+
+    /* TIMELINE RIBBON */
+    .timeline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #EAE2D3;
+      border: 1px solid #CFC5B4;
+      border-radius: 4px;
+      padding: 3px 8px;
+      gap: 4px;
+    }
+    .tl-label {
+      font-size: 8.5px;
+      font-weight: 800;
+      letter-spacing: 0.7px;
+      color: #B42318;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding-right: 4px;
+      border-right: 1px solid #C2B7A3;
+    }
+    .tl-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      gap: 4px;
+    }
+    .tl-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 9px;
+      color: #1E293B;
+      white-space: nowrap;
+    }
+    .tl-time {
+      font-family: Consolas, "Courier New", monospace;
+      font-weight: 700;
+      font-size: 8.5px;
+      background: #151922;
+      color: #F8FAFC;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+    .tl-arrow {
+      color: #94A3B8;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
+    /* KPI + BREADTH ROW */
+    .metrics-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6px;
+    }
+    .kpi-card {
+      background: #FCFBF7;
+      border: 1px solid #D4CBBA;
+      border-top: 2.5px solid #151922;
+      border-radius: 3px;
+      padding: 4px 7px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .kpi-card.alert { border-top-color: #B42318; }
+    .kpi-card.up { border-top-color: #0F766E; }
+    .kpi-card.warn { border-top-color: #B45309; }
+    .kpi-card.eu { border-top-color: #1D4ED8; }
+    .kpi-val {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #11141B;
+    }
+    .kpi-card.alert .kpi-val { color: #B42318; }
+    .kpi-card.up .kpi-val { color: #0F766E; }
+    .kpi-card.warn .kpi-val { color: #B45309; }
+    .kpi-card.eu .kpi-val { color: #1D4ED8; }
+    .kpi-desc {
+      font-size: 8.8px;
+      color: #475569;
+      line-height: 1.15;
+      margin-top: 1px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .breadth-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #FCFBF7;
+      border: 1px solid #D4CBBA;
+      border-radius: 3px;
+      padding: 3px 8px;
+    }
+    .breadth-title {
+      font-size: 8.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #334155;
+      white-space: nowrap;
+    }
+    .breadth-track {
+      display: flex;
+      height: 8px;
+      flex: 1;
+      border-radius: 2px;
+      overflow: hidden;
+      background: #E2E8F0;
+    }
+    .breadth-seg { height: 100%; }
+    .breadth-legend {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #1E293B;
+      white-space: nowrap;
+    }
+    .leg-item { display: inline-flex; align-items: center; gap: 3px; }
+    .leg-dot { width: 7px; height: 7px; border-radius: 1.5px; display: inline-block; }
+
+    /* 12 FEATURED CARDS */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 193px);
+      gap: 6px;
+    }
+    .story-card {
+      background: #FCFBF7;
+      border: 1px solid #D3C9B8;
+      border-radius: 4px;
+      padding: 6px 7px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      box-shadow: 0 1px 0 rgba(21,25,34,0.04);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-pill {
+      font-size: 8px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      padding: 1.5px 5px;
+      border-radius: 2px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .c-oceania { background: #0369A1; }
+    .c-americas { background: #B45309; }
+    .c-mideast { background: #B42318; }
+    .c-europe { background: #1D4ED8; }
+    .c-asia { background: #0F766E; }
+    .c-africa { background: #15803D; }
+
+    .card-src {
+      font-size: 7.8px;
+      font-weight: 700;
+      color: #64748B;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-art {
+      width: 100%;
+      height: 70px;
+      border: 1px solid #E5DEC9;
+      border-radius: 3px;
+      overflow: hidden;
+      background: #F6F2E8;
+      flex-shrink: 0;
+    }
+    .card-art svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .card-hl {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 11.4px;
+      font-weight: 700;
+      line-height: 1.18;
+      color: #11141B;
+      margin-top: 1px;
+    }
+    .card-body {
+      font-size: 9.5px;
+      line-height: 1.24;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    /* BOTTOM SPLIT */
+    .bottom-split {
+      display: grid;
+      grid-template-columns: 422px 1fr;
+      gap: 8px;
+      height: 192px;
+    }
+    .panel {
+      background: #FCFBF7;
+      border: 1px solid #D3C9B8;
+      border-radius: 4px;
+      padding: 6px 8px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .panel-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid #151922;
+      padding-bottom: 3px;
+      margin-bottom: 5px;
+    }
+    .panel-title {
+      font-size: 9.5px;
+      font-weight: 800;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      color: #11141B;
+    }
+    .panel-sub {
+      font-size: 8px;
+      font-weight: 700;
+      color: #64748B;
+    }
+    .map-box {
+      flex: 1;
+      border: 1px solid #D9E2EC;
+      border-radius: 3px;
+      background: #E8F0F6;
+      overflow: hidden;
+    }
+    .map-box svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      gap: 3px 10px;
+      flex: 1;
+    }
+    .compact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      font-size: 8.8px;
+      line-height: 1.18;
+      border-bottom: 1px dotted #E2DACB;
+      padding-bottom: 2px;
+      overflow: hidden;
+    }
+    .compact-item:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+    .c-num {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 8px;
+      font-weight: 800;
+      background: #151922;
+      color: #FFFFFF;
+      min-width: 15px;
+      height: 14px;
+      line-height: 14px;
+      text-align: center;
+      border-radius: 2px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+    .c-num.asia { background: #0F766E; }
+    .c-num.eu { background: #1D4ED8; }
+    .c-num.oce { background: #0369A1; }
+    .c-num.afr { background: #15803D; }
+    .c-num.glo { background: #6D28D9; }
+    .c-text {
+      color: #1E293B;
+    }
+    .c-text b {
+      color: #0F172A;
+    }
+    .c-tag {
+      color: #64748B;
+      font-size: 8px;
+      font-style: italic;
+    }
+
+    /* FOOTER DATE CHECK */
+    .date-check {
+      background: #151922;
+      color: #E2E8F0;
+      border-radius: 3px;
+      padding: 3.5px 9px;
+      font-size: 8.3px;
+      line-height: 1.2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    .dc-badge {
+      background: #15803D;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 7.8px;
+      letter-spacing: 0.5px;
+      padding: 1.5px 5px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+    .dc-main {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .dc-main b { color: #FFFFFF; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 1. MASTHEAD -->
+  <header class="masthead">
+    <div class="mast-top">
+      <span>THE WORLD IN ONE DAY <span class="accent-dot">●</span> 24 VERIFIED STORIES <span class="accent-dot">●</span> 7 REGIONS <span class="accent-dot">●</span> ALL DATED FRIDAY 27 NOV 2026</span>
+      <span>GLOBAL BROADSHEET • EDITION 2026-11-27</span>
+    </div>
+    <div class="mast-main">
+      <h1 class="mast-title">FRIDAY <span class="crimson">27 NOVEMBER</span> 2026</h1>
+      <p class="mast-deck">
+        NZ's ruling coalition loses majority on special votes; Black Friday opens amid storms &amp; 4.90% yields; Iran denies Kuwait drone strike; Kyiv warns on grid barrage; AFP hit by cyberattack; Asian chips &amp; Tokyo CPI climb.
+      </p>
+    </div>
+  </header>
+
+  <!-- 2. UTC TIMELINE RIBBON -->
+  <section class="timeline">
+    <span class="tl-label">UTC ARC</span>
+    <div class="tl-items">
+      <div class="tl-item"><span class="tl-time">00:00Z</span><span>Argentina BCRA ban</span></div>
+      <span class="tl-arrow">›</span>
+      <div class="tl-item"><span class="tl-time">01:07Z</span><span>AFP cyberattack</span></div>
+      <span class="tl-arrow">›</span>
+      <div class="tl-item"><span class="tl-time">02:14Z</span><span>Zelenskyy grid warning</span></div>
+      <span class="tl-arrow">›</span>
+      <div class="tl-item"><span class="tl-time">02:38Z</span><span>NZ hung parliament</span></div>
+      <span class="tl-arrow">›</span>
+      <div class="tl-item"><span class="tl-time">03:42Z</span><span>Asia chip rally</span></div>
+      <span class="tl-arrow">›</span>
+      <div class="tl-item"><span class="tl-time">04:06Z</span><span>HK ferry crash</span></div>
+      <span class="tl-arrow">›</span>
+      <div class="tl-item"><span class="tl-time">11:00Z</span><span>US Black Friday opens</span></div>
+    </div>
+  </section>
+
+  <!-- 3. KPI STRIP + REGIONAL BREADTH -->
+  <section class="metrics-block">
+    <div class="kpi-grid">
+      <div class="kpi-card alert">
+        <div class="kpi-val">65 / 131</div>
+        <div class="kpi-desc">NZ coalition seats (1 short)</div>
+      </div>
+      <div class="kpi-card warn">
+        <div class="kpi-val">2.9%</div>
+        <div class="kpi-desc">Tokyo Nov core CPI (16-mo high)</div>
+      </div>
+      <div class="kpi-card up">
+        <div class="kpi-val">+20.1%</div>
+        <div class="kpi-desc">China Oct industrial profits YoY</div>
+      </div>
+      <div class="kpi-card up">
+        <div class="kpi-val">+2.2%</div>
+        <div class="kpi-desc">Kospi rebound (Nikkei +0.7%)</div>
+      </div>
+      <div class="kpi-card alert">
+        <div class="kpi-val">25</div>
+        <div class="kpi-desc">Injured in Hong Kong ferry crash</div>
+      </div>
+      <div class="kpi-card eu">
+        <div class="kpi-val">€45B</div>
+        <div class="kpi-desc">EU Ukraine loan deadlocked</div>
+      </div>
+    </div>
+
+    <div class="breadth-bar-wrap">
+      <span class="breadth-title">24 STORIES BY REGION</span>
+      <div class="breadth-track">
+        <div class="breadth-seg" style="width:41.67%;background:#0F766E"></div>
+        <div class="breadth-seg" style="width:12.50%;background:#1D4ED8"></div>
+        <div class="breadth-seg" style="width:12.50%;background:#B45309"></div>
+        <div class="breadth-seg" style="width:12.50%;background:#0369A1"></div>
+        <div class="breadth-seg" style="width:8.33%;background:#15803D"></div>
+        <div class="breadth-seg" style="width:8.33%;background:#6D28D9"></div>
+        <div class="breadth-seg" style="width:4.17%;background:#B42318"></div>
+      </div>
+      <div class="breadth-legend">
+        <span class="leg-item"><i class="leg-dot" style="background:#0F766E"></i>Asia 10</span>
+        <span class="leg-item"><i class="leg-dot" style="background:#1D4ED8"></i>Europe 3</span>
+        <span class="leg-item"><i class="leg-dot" style="background:#B45309"></i>Americas 3</span>
+        <span class="leg-item"><i class="leg-dot" style="background:#0369A1"></i>Oceania 3</span>
+        <span class="leg-item"><i class="leg-dot" style="background:#15803D"></i>Africa 2</span>
+        <span class="leg-item"><i class="leg-dot" style="background:#6D28D9"></i>Global 2</span>
+        <span class="leg-item"><i class="leg-dot" style="background:#B42318"></i>Mid East 1</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 12 FEATURED STORIES (3 ROWS x 4 COLS) -->
+  <section class="cards-grid">
+
+    <!-- CARD 1: NZ -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-oceania">1 • OCEANIA • POLITICS</span>
+        <span class="card-src">BBC / Guardian / DW</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#EFF6FF"/>
+          <!-- Hemicycle seats -->
+          <path d="M24,62 A68,60 0 0,1 160,62" fill="none" stroke="#CBD5E1" stroke-width="11" stroke-dasharray="6 3"/>
+          <path d="M24,62 A68,60 0 0,1 91,4" fill="none" stroke="#0369A1" stroke-width="11" stroke-dasharray="6 3"/>
+          <path d="M95,4 A68,60 0 0,1 160,62" fill="none" stroke="#94A3B8" stroke-width="11" stroke-dasharray="6 3"/>
+          <!-- Kingmaker gold seat -->
+          <circle cx="92" cy="11" r="6.5" fill="#F59E0B" stroke="#151922" stroke-width="1.5"/>
+          <text x="92" y="14" font-size="8" font-weight="800" text-anchor="middle" fill="#151922">1</text>
+          <!-- Ballot & 65/131 badge -->
+          <rect x="166" y="10" width="52" height="50" rx="4" fill="#FFFFFF" stroke="#0369A1" stroke-width="1.5"/>
+          <text x="192" y="29" font-family="Consolas,monospace" font-size="13" font-weight="800" text-anchor="middle" fill="#B42318">65/131</text>
+          <text x="192" y="42" font-size="7.5" font-weight="700" text-anchor="middle" fill="#334155">NEED 66</text>
+          <rect x="174" y="47" width="36" height="8" rx="2" fill="#0369A1"/>
+          <text x="192" y="53.5" font-size="6.5" font-weight="700" text-anchor="middle" fill="#FFF">-2 SEATS</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">NZ special votes strip coalition of majority</h2>
+      <p class="card-body">Wellington's final count cuts National by 2 seats, dropping the ruling bloc to 65/131 and making Opportunity Party kingmaker.</p>
+    </article>
+
+    <!-- CARD 2: USA BLACK FRIDAY -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-americas">2 • N AMERICA • ECONOMY</span>
+        <span class="card-src">BBC / Hindu / TE</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#FEF3C7"/>
+          <!-- Storm clouds & rain -->
+          <path d="M16,24 Q22,12 36,16 Q46,8 58,16 Q68,15 70,24 Z" fill="#475569"/>
+          <line x1="25" y1="28" x2="21" y2="38" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/>
+          <line x1="38" y1="28" x2="34" y2="38" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/>
+          <line x1="51" y1="28" x2="47" y2="38" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/>
+          <!-- Plane delay icon -->
+          <path d="M18,52 L48,46 L55,41 L58,43 L52,49 L62,53 L59,56 L47,53 L22,58 Z" fill="#B45309"/>
+          <text x="42" y="66" font-size="7.5" font-weight="800" text-anchor="middle" fill="#78350F">400+ DELAYS</text>
+          <!-- Price tag & 10Y yield chart -->
+          <rect x="86" y="10" width="60" height="50" rx="3" fill="#151922"/>
+          <text x="116" y="25" font-size="7.5" font-weight="800" text-anchor="middle" fill="#FBBF24">BLACK FRI</text>
+          <text x="116" y="41" font-family="Consolas,monospace" font-size="11" font-weight="800" text-anchor="middle" fill="#FFFFFF">US FUT ▲</text>
+          <text x="116" y="53" font-size="7" font-weight="700" text-anchor="middle" fill="#CBD5E1">FLOODING</text>
+          <!-- 10Y Yield rising -->
+          <rect x="154" y="10" width="64" height="50" rx="3" fill="#FFFFFF" stroke="#B45309" stroke-width="1.5"/>
+          <polyline points="160,50 172,44 184,46 196,30 212,20" fill="none" stroke="#B42318" stroke-width="2.5"/>
+          <circle cx="212" cy="20" r="3" fill="#B42318"/>
+          <text x="186" y="22" font-family="Consolas,monospace" font-size="9.5" font-weight="800" text-anchor="middle" fill="#B42318">4.90%+</text>
+          <text x="186" y="57" font-size="7" font-weight="700" text-anchor="middle" fill="#475569">US 10Y YIELD</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Black Friday opens in storms &amp; 4.90% yields</h2>
+      <p class="card-body">Post-Thanksgiving floods trigger 400+ flight delays across US hubs as equity futures edge higher and 10Y yields top 4.90%.</p>
+    </article>
+
+    <!-- CARD 3: IRAN / KUWAIT -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-mideast">3 • MID EAST • CONFLICT</span>
+        <span class="card-src">Al Jazeera / CNBC</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#FEF2F2"/>
+          <!-- Radar circles -->
+          <circle cx="56" cy="36" r="27" fill="none" stroke="#FCA5A5" stroke-width="1.2"/>
+          <circle cx="56" cy="36" r="17" fill="none" stroke="#F87171" stroke-width="1.2" stroke-dasharray="3 2"/>
+          <circle cx="56" cy="36" r="4" fill="#B42318"/>
+          <!-- Drone silhouette -->
+          <path d="M40,22 L56,28 L72,22 L59,31 L56,37 L53,31 Z" fill="#151922"/>
+          <text x="56" y="67" font-size="7" font-weight="800" text-anchor="middle" fill="#991B1B">KUWAIT STRIKE</text>
+          <!-- Oil derrick -->
+          <polygon points="108,58 118,16 122,16 132,58" fill="none" stroke="#151922" stroke-width="2"/>
+          <line x1="112" y1="36" x2="128" y2="36" stroke="#151922" stroke-width="2"/>
+          <line x1="110" y1="47" x2="130" y2="47" stroke="#151922" stroke-width="2"/>
+          <!-- Oil share pie / claim -->
+          <circle cx="182" cy="34" r="22" fill="#E2E8F0" stroke="#151922" stroke-width="1.5"/>
+          <path d="M182,12 A22,22 0 0,1 182,56 Z" fill="#B42318"/>
+          <text x="192" y="37" font-family="Consolas,monospace" font-size="9" font-weight="800" text-anchor="middle" fill="#FFFFFF">~50%</text>
+          <text x="182" y="66" font-size="7" font-weight="800" text-anchor="middle" fill="#1E293B">US OIL CLAIM</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Iran denies Kuwait drone strike; US oil claim</h2>
+      <p class="card-body">Tehran rejects blame for deadly Kuwait strike killing Italian technicians; Trump asserts the US controls ~50% of world oil.</p>
+    </article>
+
+    <!-- CARD 4: UKRAINE / EU -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-europe">4 • EUROPE • WAR / EU</span>
+        <span class="card-src">AJ / DW / Guardian</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#EFF6FF"/>
+          <!-- Power pylon -->
+          <path d="M36,60 L48,14 L60,60 M32,26 L64,26 M38,40 L58,40" fill="none" stroke="#1E293B" stroke-width="2.2"/>
+          <!-- Lightning bolt -->
+          <polygon points="72,14 62,34 71,34 64,54 84,29 74,29" fill="#F59E0B" stroke="#B42318" stroke-width="1.2"/>
+          <text x="55" y="67" font-size="7" font-weight="800" text-anchor="middle" fill="#1E3A8A">GRID ALERT</text>
+          <!-- EU stars & deadlock lock -->
+          <rect x="108" y="10" width="110" height="50" rx="4" fill="#1D4ED8"/>
+          <circle cx="136" cy="35" r="15" fill="none" stroke="#FBBF24" stroke-width="2" stroke-dasharray="2.5 3.8"/>
+          <text x="136" y="38.5" font-size="11" font-weight="800" text-anchor="middle" fill="#FBBF24">EU</text>
+          <rect x="164" y="17" width="46" height="36" rx="3" fill="#FFFFFF"/>
+          <text x="187" y="33" font-family="Consolas,monospace" font-size="11.5" font-weight="800" text-anchor="middle" fill="#1D4ED8">€45B</text>
+          <text x="187" y="45" font-size="6.8" font-weight="800" text-anchor="middle" fill="#B42318">DEADLOCK</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Kyiv grid barrage warning; €45B EU loan stalls</h2>
+      <p class="card-body">Zelenskyy warns of massive Russian energy-grid strikes as Trump urges pullback; EU summit deadlocks over €45B Ukraine aid.</p>
+    </article>
+
+    <!-- CARD 5: AFP CYBERATTACK -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-europe">5 • EUROPE • CYBER</span>
+        <span class="card-src">Al Jazeera / AA</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#F1F5F9"/>
+          <!-- Server racks -->
+          <rect x="18" y="12" width="58" height="14" rx="2" fill="#1E293B"/>
+          <circle cx="26" cy="19" r="2.5" fill="#EF4444"/>
+          <rect x="34" y="17" width="34" height="4" rx="1" fill="#475569"/>
+          <rect x="18" y="29" width="58" height="14" rx="2" fill="#1E293B"/>
+          <circle cx="26" cy="36" r="2.5" fill="#EF4444"/>
+          <rect x="34" y="34" width="34" height="4" rx="1" fill="#475569"/>
+          <rect x="18" y="46" width="58" height="14" rx="2" fill="#1E293B"/>
+          <circle cx="26" cy="53" r="2.5" fill="#F59E0B"/>
+          <rect x="34" y="51" width="34" height="4" rx="1" fill="#475569"/>
+          <!-- Shield/Lock & AFP -->
+          <path d="M114,12 L140,18 L140,38 Q140,54 114,62 Q88,54 88,38 L88,18 Z" fill="#B42318"/>
+          <rect x="106" y="31" width="16" height="13" rx="2" fill="#FFFFFF"/>
+          <path d="M109,31 V26 A5,5 0 0,1 119,26 V31" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+          <rect x="152" y="16" width="62" height="38" rx="3" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.5"/>
+          <text x="183" y="33" font-family="Georgia,serif" font-size="13" font-weight="900" text-anchor="middle" fill="#1D4ED8">AFP</text>
+          <text x="183" y="46" font-size="7" font-weight="800" text-anchor="middle" fill="#B42318">FORUM OFFLINE</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Cyberattack shuts down AFP Forum platform</h2>
+      <p class="card-body">Paris-based Agence France-Presse suspends its AFP Forum media distribution portal and launches an investigation after cyberattack.</p>
+    </article>
+
+    <!-- CARD 6: BRAZIL -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-americas">6 • S AMERICA • ECONOMY</span>
+        <span class="card-src">The Hindu / FT</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#ECFDF5"/>
+          <!-- Brazil flag emblem -->
+          <rect x="14" y="14" width="62" height="42" rx="3" fill="#15803D"/>
+          <polygon points="45,19 70,35 45,51 20,35" fill="#FACC15"/>
+          <circle cx="45" cy="35" r="8.5" fill="#1D4ED8"/>
+          <!-- Market & Real rally -->
+          <rect x="86" y="10" width="130" height="50" rx="3" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.5"/>
+          <polyline points="94,48 112,44 128,46 144,30 162,26 180,17" fill="none" stroke="#0F766E" stroke-width="3"/>
+          <polygon points="180,17 171,17 177,25" fill="#0F766E"/>
+          <text x="197" y="28" font-family="Consolas,monospace" font-size="10" font-weight="800" text-anchor="middle" fill="#0F766E">BRL ▲</text>
+          <text x="197" y="41" font-family="Consolas,monospace" font-size="9" font-weight="800" text-anchor="middle" fill="#15803D">B3 ▲</text>
+          <text x="151" y="56" font-size="7.2" font-weight="800" text-anchor="middle" fill="#1E293B">TRABUCO → FINMIN</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Lula taps Bradesco's Trabuco as FinMin</h2>
+      <p class="card-body">Brazil's president appoints banking veteran Luiz Carlos Trabuco to lead the Finance Ministry, rallying stocks and the real.</p>
+    </article>
+
+    <!-- CARD 7: ARGENTINA -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-americas">7 • S AMERICA • POLICY</span>
+        <span class="card-src">AJ / BA Times</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#EFF6FF"/>
+          <!-- Central Bank columns -->
+          <polygon points="20,24 54,10 88,24" fill="#1E293B"/>
+          <rect x="24" y="24" width="60" height="4" fill="#334155"/>
+          <rect x="27" y="28" width="7" height="24" fill="#64748B"/>
+          <rect x="41" y="28" width="7" height="24" fill="#64748B"/>
+          <rect x="55" y="28" width="7" height="24" fill="#64748B"/>
+          <rect x="69" y="28" width="7" height="24" fill="#64748B"/>
+          <rect x="20" y="52" width="68" height="6" fill="#1E293B"/>
+          <text x="54" y="66" font-size="7" font-weight="800" text-anchor="middle" fill="#1E293B">BCRA VAULT</text>
+          <!-- Banned money printing -->
+          <rect x="104" y="20" width="54" height="30" rx="2" fill="#BBF7D0" stroke="#15803D" stroke-width="1.5"/>
+          <text x="131" y="39" font-family="Consolas,monospace" font-size="13" font-weight="800" text-anchor="middle" fill="#166534">ARS $</text>
+          <circle cx="131" cy="35" r="20" fill="none" stroke="#B42318" stroke-width="3.5"/>
+          <line x1="117" y1="49" x2="145" y2="21" stroke="#B42318" stroke-width="3.5"/>
+          <rect x="168" y="16" width="50" height="38" rx="3" fill="#B45309"/>
+          <text x="193" y="33" font-size="8" font-weight="800" text-anchor="middle" fill="#FFFFFF">ZERO</text>
+          <text x="193" y="44" font-size="7" font-weight="700" text-anchor="middle" fill="#FEF3C7">PRINTING</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Argentina bars Central Bank deficit printing</h2>
+      <p class="card-body">Buenos Aires prohibits the BCRA from monetizing fiscal deficits under Milei's monetary overhaul to curb chronic inflation.</p>
+    </article>
+
+    <!-- CARD 8: ASIA CHIPS -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-asia">8 • ASIA • MARKETS</span>
+        <span class="card-src">Al Jazeera / Hindu</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#ECFDF5"/>
+          <!-- Silicon microchip -->
+          <rect x="22" y="15" width="40" height="40" rx="3" fill="#0F766E" stroke="#151922" stroke-width="1.5"/>
+          <rect x="30" y="23" width="24" height="24" rx="2" fill="#151922"/>
+          <text x="42" y="38" font-family="Consolas,monospace" font-size="8" font-weight="800" text-anchor="middle" fill="#5EEAD4">AI</text>
+          <!-- Pins -->
+          <line x1="15" y1="24" x2="22" y2="24" stroke="#151922" stroke-width="2"/>
+          <line x1="15" y1="35" x2="22" y2="35" stroke="#151922" stroke-width="2"/>
+          <line x1="15" y1="46" x2="22" y2="46" stroke="#151922" stroke-width="2"/>
+          <line x1="62" y1="24" x2="69" y2="24" stroke="#151922" stroke-width="2"/>
+          <line x1="62" y1="35" x2="69" y2="35" stroke="#151922" stroke-width="2"/>
+          <line x1="62" y1="46" x2="69" y2="46" stroke="#151922" stroke-width="2"/>
+          <!-- Index bars -->
+          <rect x="82" y="10" width="134" height="50" rx="3" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.5"/>
+          <text x="90" y="27" font-size="8" font-weight="800" fill="#1E293B">KOSPI</text>
+          <rect x="128" y="19" width="52" height="10" rx="2" fill="#0F766E"/>
+          <text x="184" y="27" font-family="Consolas,monospace" font-size="9" font-weight="800" fill="#0F766E">+2.2%</text>
+          <text x="90" y="45" font-size="8" font-weight="800" fill="#1E293B">NIKKEI</text>
+          <rect x="128" y="37" width="24" height="10" rx="2" fill="#14B8A6"/>
+          <text x="157" y="45" font-family="Consolas,monospace" font-size="9" font-weight="800" fill="#0F766E">+0.7%</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Asian chip stocks rally after Huang remark</h2>
+      <p class="card-body">Seoul's Kospi jumps 2.2% and Tokyo's Nikkei rises 0.7% as Trump says Nvidia CEO Jensen Huang poses no security threat.</p>
+    </article>
+
+    <!-- CARD 9: TOKYO CPI -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-asia">9 • ASIA • MACRO</span>
+        <span class="card-src">CNA</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#FFFBEB"/>
+          <!-- Thermometer -->
+          <rect x="26" y="10" width="12" height="38" rx="6" fill="#FFFFFF" stroke="#151922" stroke-width="1.5"/>
+          <circle cx="32" cy="52" r="9" fill="#B42318" stroke="#151922" stroke-width="1.5"/>
+          <rect x="29" y="18" width="6" height="32" fill="#B42318"/>
+          <!-- CPI Bar Chart -->
+          <line x1="56" y1="54" x2="150" y2="54" stroke="#334155" stroke-width="1.5"/>
+          <line x1="56" y1="34" x2="150" y2="34" stroke="#0F766E" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <text x="58" y="21" font-size="7" font-weight="800" fill="#0F766E">2.0% BOJ TARGET</text>
+          <rect x="62" y="32" width="14" height="22" fill="#94A3B8"/>
+          <rect x="82" y="29" width="14" height="25" fill="#94A3B8"/>
+          <rect x="102" y="26" width="14" height="28" fill="#F59E0B"/>
+          <rect x="122" y="16" width="16" height="38" fill="#B42318"/>
+          <!-- Callout -->
+          <rect x="160" y="10" width="58" height="50" rx="3" fill="#151922"/>
+          <text x="189" y="29" font-family="Consolas,monospace" font-size="14" font-weight="800" text-anchor="middle" fill="#FBBF24">2.9%</text>
+          <text x="189" y="42" font-size="7" font-weight="700" text-anchor="middle" fill="#FFFFFF">16-MO HIGH</text>
+          <text x="189" y="53" font-size="6.8" font-weight="800" text-anchor="middle" fill="#5EEAD4">BOJ HIKE ▲</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Tokyo core CPI hits 2.9%, lifts BOJ hike odds</h2>
+      <p class="card-body">November core inflation accelerates to a 16-month high above the Bank of Japan's 2% goal, sharpening December rate-hike bets.</p>
+    </article>
+
+    <!-- CARD 10: HONG KONG FERRY -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-asia">10 • ASIA • DISASTER</span>
+        <span class="card-src">CNA</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#E0F2FE"/>
+          <!-- Water waves -->
+          <path d="M0,52 Q18,46 36,52 T72,52 T108,52 T144,52 T180,52 T228,52 L228,70 L0,70 Z" fill="#0369A1"/>
+          <!-- Pier -->
+          <rect x="126" y="34" width="44" height="18" fill="#475569"/>
+          <rect x="132" y="52" width="6" height="14" fill="#334155"/>
+          <rect x="156" y="52" width="6" height="14" fill="#334155"/>
+          <!-- Ferry -->
+          <polygon points="18,48 112,48 122,36 26,36" fill="#FFFFFF" stroke="#151922" stroke-width="1.5"/>
+          <rect x="34" y="24" width="66" height="12" rx="2" fill="#0F766E"/>
+          <rect x="42" y="27" width="12" height="5" fill="#BAE6FD"/>
+          <rect x="59" y="27" width="12" height="5" fill="#BAE6FD"/>
+          <rect x="76" y="27" width="12" height="5" fill="#BAE6FD"/>
+          <!-- Impact burst -->
+          <polygon points="122,34 128,24 132,33 142,29 135,38 144,44 133,44 128,52 124,42 114,42" fill="#EF4444" stroke="#FEF08A" stroke-width="1"/>
+          <!-- Casualty badge -->
+          <rect x="176" y="10" width="44" height="40" rx="3" fill="#B42318"/>
+          <text x="198" y="30" font-family="Consolas,monospace" font-size="14" font-weight="800" text-anchor="middle" fill="#FFFFFF">25</text>
+          <text x="198" y="42" font-size="6.8" font-weight="800" text-anchor="middle" fill="#FEE2E2">INJURED</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Hong Kong ferry pier collision injures 25</h2>
+      <p class="card-body">A passenger ferry crashes into a dock amid midday Victoria Harbour traffic, leaving 25 people injured and prompting rescue ops.</p>
+    </article>
+
+    <!-- CARD 11: CHINA PROFITS / TARIFFS -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-asia">11 • ASIA • ECONOMY</span>
+        <span class="card-src">CNBC / CNA</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#ECFDF5"/>
+          <!-- Factory silhouette -->
+          <polygon points="16,58 16,32 34,42 34,32 52,42 52,32 70,42 70,58" fill="#0F766E"/>
+          <rect x="20" y="15" width="7" height="19" fill="#334155"/>
+          <circle cx="25" cy="11" r="4" fill="#94A3B8"/>
+          <circle cx="33" cy="9" r="5" fill="#CBD5E1"/>
+          <!-- Profit surge -->
+          <rect x="78" y="12" width="72" height="46" rx="3" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.5"/>
+          <text x="114" y="30" font-family="Consolas,monospace" font-size="13" font-weight="800" text-anchor="middle" fill="#0F766E">+20.1%</text>
+          <text x="114" y="42" font-size="7" font-weight="800" text-anchor="middle" fill="#1E293B">OCT PROFITS</text>
+          <text x="114" y="52" font-size="6.8" font-weight="700" text-anchor="middle" fill="#64748B">5-MO HIGH</text>
+          <!-- Tariff wall -->
+          <rect x="158" y="12" width="58" height="46" rx="3" fill="#B42318"/>
+          <line x1="158" y1="27" x2="216" y2="27" stroke="#FCA5A5" stroke-width="1"/>
+          <line x1="158" y1="42" x2="216" y2="42" stroke="#FCA5A5" stroke-width="1"/>
+          <text x="187" y="23" font-size="7.2" font-weight="800" text-anchor="middle" fill="#FFFFFF">BEIJING</text>
+          <text x="187" y="38" font-size="7.5" font-weight="800" text-anchor="middle" fill="#FEF08A">TARIFF</text>
+          <text x="187" y="53" font-size="7.2" font-weight="800" text-anchor="middle" fill="#FFFFFF">WARNING</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">China profits jump 20.1%; tariff warning</h2>
+      <p class="card-body">October industrial profits post a 5-month high (+20.1% YoY) even as Beijing warns Washington against retaliatory tariff hikes.</p>
+    </article>
+
+    <!-- CARD 12: AFRICA / JUSTICE & HEALTH -->
+    <article class="story-card">
+      <div class="card-top">
+        <span class="card-pill c-africa">12 • AFRICA • JUSTICE/HEALTH</span>
+        <span class="card-src">BBC Africa</span>
+      </div>
+      <div class="card-art">
+        <svg viewBox="0 0 228 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="228" height="70" fill="#F0FDF4"/>
+          <!-- Scales of Justice -->
+          <line x1="48" y1="12" x2="48" y2="52" stroke="#15803D" stroke-width="2.5"/>
+          <line x1="22" y1="20" x2="74" y2="20" stroke="#15803D" stroke-width="2.5"/>
+          <path d="M16,36 L22,20 L28,36 Z" fill="#15803D"/>
+          <path d="M68,36 L74,20 L80,36 Z" fill="#15803D"/>
+          <rect x="33" y="50" width="30" height="5" rx="2" fill="#151922"/>
+          <text x="48" y="65" font-size="7" font-weight="800" text-anchor="middle" fill="#166534">KENYA VINDICATED</text>
+          <!-- Medical Vial & Shield -->
+          <rect x="104" y="10" width="110" height="50" rx="4" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+          <rect x="116" y="21" width="16" height="28" rx="2" fill="#DCFCE7" stroke="#15803D" stroke-width="1.5"/>
+          <rect x="119" y="16" width="10" height="5" fill="#151922"/>
+          <line x1="124" y1="29" x2="124" y2="41" stroke="#15803D" stroke-width="2.2"/>
+          <line x1="118" y1="35" x2="130" y2="35" stroke="#15803D" stroke-width="2.2"/>
+          <text x="172" y="28" font-size="9" font-weight="800" text-anchor="middle" fill="#15803D">HIV JAB</text>
+          <text x="172" y="40" font-size="7.5" font-weight="700" text-anchor="middle" fill="#1E293B">CHEAPER ROLLOUT</text>
+          <text x="172" y="52" font-size="7" font-weight="800" text-anchor="middle" fill="#15803D">HOPE FOR MILLIONS</text>
+        </svg>
+      </div>
+      <h2 class="card-hl">Kenya UK acquittal; cheaper HIV jab in Africa</h2>
+      <p class="card-body">Wrongly jailed Kenyan speaks after UK ruling is overturned as an affordable HIV prevention injection begins reaching Africa.</p>
+    </article>
+
+  </section>
+
+  <!-- 5. BOTTOM SPLIT: MAP + STORIES 13-24 -->
+  <section class="bottom-split">
+    <!-- LEFT: WORLD MAP -->
+    <div class="panel">
+      <div class="panel-hdr">
+        <span class="panel-title">WHERE IT HAPPENED</span>
+        <span class="panel-sub">FEATURED LOCATIONS (1–12)</span>
+      </div>
+      <div class="map-box">
+        <svg viewBox="0 0 404 156" xmlns="http://www.w3.org/2000/svg">
+          <!-- Subtle latitude/longitude grid -->
+          <line x1="0" y1="39" x2="404" y2="39" stroke="#D1DFEC" stroke-width="0.7"/>
+          <line x1="0" y1="78" x2="404" y2="78" stroke="#CBD5E1" stroke-width="0.9" stroke-dasharray="3 3"/>
+          <line x1="0" y1="117" x2="404" y2="117" stroke="#D1DFEC" stroke-width="0.7"/>
+          <line x1="101" y1="0" x2="101" y2="156" stroke="#D1DFEC" stroke-width="0.7"/>
+          <line x1="202" y1="0" x2="202" y2="156" stroke="#D1DFEC" stroke-width="0.7"/>
+          <line x1="303" y1="0" x2="303" y2="156" stroke="#D1DFEC" stroke-width="0.7"/>
+
+          <!-- Simplified crisp world continents (Equirectangular fit in 404x156) -->
+          <!-- North America -->
+          <path d="M26,22 L76,16 L112,24 L118,40 L94,54 L82,66 L76,74 L68,72 L58,56 L42,46 L26,34 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- Greenland -->
+          <path d="M120,10 L146,8 L142,24 L124,24 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- South America -->
+          <path d="M84,78 L112,78 L128,94 L120,118 L104,142 L94,142 L90,114 L82,92 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- UK & Ireland -->
+          <path d="M174,30 L179,28 L180,38 L173,38 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.7"/>
+          <!-- Europe -->
+          <path d="M182,24 L208,18 L234,24 L232,44 L212,48 L194,48 L182,44 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- Africa -->
+          <path d="M174,54 L216,52 L236,68 L232,96 L214,126 L198,126 L188,98 L172,78 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- Madagascar -->
+          <path d="M239,106 L245,103 L244,120 L238,119 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.7"/>
+          <!-- Asia -->
+          <path d="M234,20 L330,18 L368,28 L360,52 L344,68 L322,74 L302,86 L290,74 L276,88 L266,74 L242,66 L232,44 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- Japan -->
+          <path d="M348,44 L356,42 L354,56 L346,56 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- Indonesia / SE Asia islands -->
+          <path d="M306,88 L334,90 L338,96 L306,94 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.7"/>
+          <!-- Australia -->
+          <path d="M320,104 L362,104 L368,124 L348,134 L322,126 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+          <!-- New Zealand -->
+          <path d="M376,128 L385,122 L386,136 L378,142 Z" fill="#D5CCB9" stroke="#9B907C" stroke-width="0.8"/>
+
+          <!-- PINS 1..12 (non-overlapping positions with clear numbers) -->
+          <!-- 1 NZ -->
+          <circle cx="381" cy="133" r="7.5" fill="#0369A1" stroke="#FFF" stroke-width="1.3"/>
+          <text x="381" y="136" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">1</text>
+          <!-- 2 USA -->
+          <circle cx="76" cy="46" r="7.5" fill="#B45309" stroke="#FFF" stroke-width="1.3"/>
+          <text x="76" y="49" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">2</text>
+          <!-- 3 Kuwait/Iran -->
+          <circle cx="246" cy="61" r="7.5" fill="#B42318" stroke="#FFF" stroke-width="1.3"/>
+          <text x="246" y="64" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">3</text>
+          <!-- 4 Kyiv/Brussels -->
+          <circle cx="216" cy="36" r="7.5" fill="#1D4ED8" stroke="#FFF" stroke-width="1.3"/>
+          <text x="216" y="39" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">4</text>
+          <!-- 5 Paris AFP -->
+          <circle cx="187" cy="38" r="7.5" fill="#1D4ED8" stroke="#FFF" stroke-width="1.3"/>
+          <text x="187" y="41" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">5</text>
+          <!-- 6 Brazil -->
+          <circle cx="114" cy="100" r="7.5" fill="#B45309" stroke="#FFF" stroke-width="1.3"/>
+          <text x="114" y="103" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">6</text>
+          <!-- 7 Argentina -->
+          <circle cx="100" cy="126" r="7.5" fill="#B45309" stroke="#FFF" stroke-width="1.3"/>
+          <text x="100" y="129" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">7</text>
+          <!-- 8 Seoul -->
+          <circle cx="333" cy="48" r="7.5" fill="#0F766E" stroke="#FFF" stroke-width="1.3"/>
+          <text x="333" y="51" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">8</text>
+          <!-- 9 Tokyo -->
+          <circle cx="355" cy="49" r="7.5" fill="#0F766E" stroke="#FFF" stroke-width="1.3"/>
+          <text x="355" y="52" font-size="8" font-weight="800" text-anchor="middle" fill="#FFF">9</text>
+          <!-- 10 Hong Kong -->
+          <circle cx="322" cy="68" r="7.5" fill="#0F766E" stroke="#FFF" stroke-width="1.3"/>
+          <text x="322" y="71" font-size="7.5" font-weight="800" text-anchor="middle" fill="#FFF">10</text>
+          <!-- 11 Beijing -->
+          <circle cx="313" cy="45" r="7.5" fill="#0F766E" stroke="#FFF" stroke-width="1.3"/>
+          <text x="313" y="48" font-size="7.5" font-weight="800" text-anchor="middle" fill="#FFF">11</text>
+          <!-- 12 Kenya -->
+          <circle cx="226" cy="86" r="7.5" fill="#15803D" stroke="#FFF" stroke-width="1.3"/>
+          <text x="226" y="89" font-size="7.5" font-weight="800" text-anchor="middle" fill="#FFF">12</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- RIGHT: STORIES 13-24 -->
+    <div class="panel">
+      <div class="panel-hdr">
+        <span class="panel-title">ALSO ON FRIDAY 27 NOVEMBER</span>
+        <span class="panel-sub">STORIES 13–24 VERIFIED</span>
+      </div>
+      <div class="compact-grid">
+        <div class="compact-item"><span class="c-num asia">13</span><div class="c-text"><b>Taiwan:</b> China threat looms over local elections <span class="c-tag">(Guardian)</span></div></div>
+        <div class="compact-item"><span class="c-num asia">19</span><div class="c-text"><b>Indonesia:</b> Bezos Earth Fund backs Javan rhino relocation <span class="c-tag">(ANN)</span></div></div>
+        <div class="compact-item"><span class="c-num eu">14</span><div class="c-text"><b>Belarus/Ukraine:</b> Russia &amp; Ukraine exchange soldiers' bodies <span class="c-tag">(Xinhua)</span></div></div>
+        <div class="compact-item"><span class="c-num asia">20</span><div class="c-text"><b>Indonesia:</b> 2026 CPNS civil-service opens 154,000+ posts <span class="c-tag">(Setkab)</span></div></div>
+        <div class="compact-item"><span class="c-num asia">15</span><div class="c-text"><b>Thailand:</b> PM defends US pact capping tariffs at 18% <span class="c-tag">(Thai Enq)</span></div></div>
+        <div class="compact-item"><span class="c-num asia">21</span><div class="c-text"><b>SE Asia:</b> Nvidia halts select AI server shipments on US rules <span class="c-tag">(ANN/CNA)</span></div></div>
+        <div class="compact-item"><span class="c-num asia">16</span><div class="c-text"><b>Malaysia:</b> Major coalitions skip Sarawak pre-federal polls <span class="c-tag">(CNA)</span></div></div>
+        <div class="compact-item"><span class="c-num afr">22</span><div class="c-text"><b>DRC/Africa:</b> Congo Ebola hits 12,000 cases; envoy row <span class="c-tag">(NPR/Africa)</span></div></div>
+        <div class="compact-item"><span class="c-num oce">17</span><div class="c-text"><b>PNG/Aus:</b> Sam Walker signs with PNG Chiefs for 2028 NRL <span class="c-tag">(ABC)</span></div></div>
+        <div class="compact-item"><span class="c-num glo">23</span><div class="c-text"><b>Global Trade:</b> UNCTAD warns 2026 sea trade flat amid Hormuz <span class="c-tag">(UNCTAD)</span></div></div>
+        <div class="compact-item"><span class="c-num oce">18</span><div class="c-text"><b>Australia:</b> Ashes Sandpapergate probe widens; Lyon faces axe <span class="c-tag">(BBC/ABC)</span></div></div>
+        <div class="compact-item"><span class="c-num glo">24</span><div class="c-text"><b>Global Sport:</b> Tbilisi flag clash halts tie; U-17 eyes 2030 Cup <span class="c-tag">(AJ)</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER DATE CHECK -->
+  <footer class="date-check">
+    <span class="dc-badge">DATE CHECK ✓</span>
+    <span class="dc-main">
+      All 24 stories verified <b>Friday 27 Nov 2026</b> • Excluded 25–26 Nov items: <b>Macy's parade postponed</b>, <b>FCC SpaceX 1M satellites</b>, <b>ESA Hera Dimorphos</b>, <b>ECB De Cos</b>, <b>Cairo tanker blast</b>.
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
