@@ -1,4 +1,4 @@
-# Friday 27 November 2026: 37 stories, 10 regions, 14 fields, 13 drawn scenes, map, UTC timeline & date check
+# Friday 27 November 2026: 37 stories, 10 regions, 14 fields, 11 drawn scenes, map, UTC timeline & date check
 
 ![news-image-20261127](https://make.fun/badge/news-image-20261127.svg)
 ![Rank](https://make.fun/badge/news-image-20261127/SimplyMar/news-image-20261127/rank.svg)
@@ -6,7 +6,7 @@
 
 Bounty: [https://make.fun/bounty/news-image-20261127](https://make.fun/bounty/news-image-20261127)
 
-An original `1024x1024` editorial broadsheet front page summarizing 37 verified world news stories dated **Friday 27 November 2026** across 10 global regions and 14 fields—featuring 3 lead hero stories (each with a *Why It Matters* synthesis) and 10 mid-row dispatches with original text-free editorial vector illustrations, 6 key figures, a chronological UTC strip, certainty badges (`OFFICIAL`, `CONFIRMED`, `REPORTED`, `CLAIM`), an equirectangular world locator map, 24 spacious verified briefs, and a Date Check exclusion audit.
+An original `1024x1024` classical editorial broadsheet summarizing 37 verified world news stories dated **Friday 27 November 2026** across 10 global regions and 14 fields—featuring a full-width masthead, bold key-figures ribbon, 3 lead hero stories (each with a *Why It Matters* synthesis) and 8 wide mid-row dispatches with original layered vector illustrations, certainty badges (`OFFICIAL`, `CONFIRMED`, `REPORTED`, `CLAIM`), an equirectangular world locator map, 26 verified briefs, a chronological UTC panel, and a Date Check exclusion audit.
 
 ## Structure
 
