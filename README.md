@@ -1,4 +1,4 @@
-# Friday 27 November 2026 — World News in One Image
+# Friday 27 November 2026: 39 stories, 10 regions, 13 drawn scenes, map, UTC timeline & date check
 
 ![news-image-20261127](https://make.fun/badge/news-image-20261127.svg)
 ![Rank](https://make.fun/badge/news-image-20261127/SimplyMar/news-image-20261127/rank.svg)
@@ -6,7 +6,7 @@
 
 Bounty: [https://make.fun/bounty/news-image-20261127](https://make.fun/bounty/news-image-20261127)
 
-An original `1024x1024` editorial broadsheet infographic summarizing 24 verified global news stories dated **Friday, 27 November 2026** across 7 regions, featuring hand-crafted vector illustrations, a UTC timeline ribbon, key macro & political indicators, a numbered world incident map, and a full 24-story digest with date-verification notes.
+An original `1024x1024` editorial broadsheet front page summarizing 39 verified world news stories dated **Friday 27 November 2026** across 10 global regions and 14 fields—featuring 3 lead hero stories and 10 mid-row dispatches with original full-bleed vector illustrations, 6 key figures, a chronological UTC strip, certainty badges (`OFFICIAL`, `CONFIRMED`, `REPORTED`, `CLAIM`), an equirectangular world locator map, 26 additional verified briefs, and a Date Check exclusion audit.
 
 ## Structure
 
