@@ -1,6 +1,10 @@
 # Friday 27 November 2026 — The World in One Day
 
-A single `1024×1024` editorial broadsheet front page summarizing **38 verified world news stories** dated **Friday 27 November 2026** across **10 global regions** and **14 fields**, featuring 13 original vector editorial scenes, a dark-navy horizontal **The Day in Numbers** stat ribbon, a UTC timeline strip, 25 verified global dispatches, a deep-navy equirectangular world map, and an explicit **Date Check** audit box.
+[![make.fun · news-image-20261127](https://make.fun/badge/news-image-20261127.svg)](https://make.fun/bounty/news-image-20261127?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+[![rank](https://make.fun/badge/news-image-20261127/SimplyMar/news-image-20261127/rank.svg)](https://make.fun/bounty/news-image-20261127/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+[![reward](https://make.fun/badge/news-image-20261127/SimplyMar/news-image-20261127/reward.svg)](https://make.fun/bounty/news-image-20261127/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+
+Entry for the [make.fun `news-image-20261127` bounty](https://make.fun/bounty/news-image-20261127): a single `1024×1024` editorial broadsheet front page summarizing **38 verified world news stories** dated **Friday 27 November 2026** across **10 global regions** and **14 fields**, featuring 13 original vector editorial scenes, a dark-navy horizontal **The Day in Numbers** stat ribbon, a UTC timeline strip, 25 verified global dispatches, a deep-navy equirectangular world map, and an explicit **Date Check** audit box.
 
 ## Design Highlights (v10)
 - **Open Broadsheet Hierarchy:** Warm cream newsprint (`#F6F2E9`), deep charcoal rules, refined regional accent strip, and three full-width lead stories (`16.2px` Georgia serif) with `WHY IT MATTERS` context lines.
