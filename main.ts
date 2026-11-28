@@ -27,7 +27,7 @@ const destPath = path.join(outputDir, 'entry.png');
 const png = fs.readFileSync(sourcePath);
 const { width, height } = assertValidEntryPng(png);
 
-fs.mkdirSync(outputDir, { recursive: true });
-fs.writeFileSync(destPath, png);
+fs.mkdirSync(outputDir, { recursive: true, mode: 0o755 });
+fs.writeFileSync(destPath, png, { mode: 0o644 });
 
 console.log(`Wrote ${png.byteLength} bytes (${width}x${height}) to ${destPath}`);
