@@ -71,15 +71,11 @@ if (dims.width !== 1024 || dims.height !== 1024) {
   throw new Error(`Expected 1024x1024, got ${dims.width}x${dims.height}`);
 }
 
-if (png.byteLength > 500_000) {
-  await execFileAsync('python', [
-    '-c',
-    `from PIL import Image; im = Image.open(${JSON.stringify(tempPng)}); im.save(${JSON.stringify(outPath)}, format='PNG', optimize=True, compress_level=9)`,
-  ]);
-  fs.unlinkSync(tempPng);
-} else {
-  fs.renameSync(tempPng, outPath);
-}
+await execFileAsync('python', [
+  '-c',
+  `from PIL import Image; im = Image.open(${JSON.stringify(tempPng)}); im.save(${JSON.stringify(outPath)}, format='PNG', optimize=True, compress_level=9)`,
+]);
+fs.unlinkSync(tempPng);
 
 const finalPng = fs.readFileSync(outPath);
 const finalDims = readPngDimensions(finalPng);
